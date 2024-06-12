@@ -1,0 +1,168 @@
+
+
+// Set your brand colors
+
+
+// Path to Bulma's sass folder
+@use "bulma/sass" with (
+  // concatenate "Clash Display" with iv.$family-sans-serif to use it as the primary font
+  $text: #FFFFFF,
+  $text-weak: #FFFFFF,
+  $text-strong: #FFFFFF,
+  $text-invert: #000000,
+  $family-primary: '"Clash Display", "Inter", "SF Pro", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", "Helvetica", "Arial", sans-serif',
+  $black: #000000,
+  // $variable-columns: false,
+);
+
+
+// Import the Google Font
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('assets/fonts/BebasNeue-Regular.woff2') format('woff2'),
+      url('assets/fonts/BebasNeue-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bebas Neue Book';
+  src: url('assets/fonts/BebasNeue-Book.woff2') format('woff2'),
+      url('assets/fonts/BebasNeue-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('assets/fonts/BebasNeue-Light.woff2') format('woff2'),
+      url('assets/fonts/BebasNeue-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('assets/fonts/BebasNeue-Bold.woff2') format('woff2'),
+      url('assets/fonts/BebasNeue-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('assets/fonts/ClashDisplay-Bold.woff2') format('woff2'),
+      url('assets/fonts/ClashDisplay-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('assets/fonts/ClashDisplay-Extralight.woff2') format('woff2'),
+      url('assets/fonts/ClashDisplay-Extralight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('assets/fonts/ClashDisplay-Medium.woff2') format('woff2'),
+      url('assets/fonts/ClashDisplay-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('assets/fonts/ClashDisplay-Semibold.woff2') format('woff2'),
+      url('assets/fonts/ClashDisplay-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('assets/fonts/ClashDisplay-Light.woff2') format('woff2'),
+      url('assets/fonts/ClashDisplay-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('assets/fonts/ClashDisplay-Regular.woff2') format('woff2'),
+      url('assets/fonts/ClashDisplay-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('assets/fonts/BebasNeue-Bold.woff2') format('woff2'),
+      url('assets/fonts/BebasNeue-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('assets/fonts/BebasNeue-Regular.woff2') format('woff2'),
+      url('assets/fonts/BebasNeue-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bebas Neue Book';
+  src: url('assets/fonts/BebasNeue-Book.woff2') format('woff2'),
+      url('assets/fonts/BebasNeue-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('assets/fonts/BebasNeue-Light.woff2') format('woff2'),
+      url('assets/fonts/BebasNeue-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('assets/fonts/BebasNeue-Thin.woff2') format('woff2'),
+      url('assets/fonts/BebasNeue-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+.is-bebas{
+  font-family: "Bebas Neue", "Inter", "SF Pro", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+// make a for loop to generate classes of font-weight named .is-100 to .is-800
+@for $i from 100 through 800 {
+  .is-#{$i} {
+    font-weight: $i;
+  }
+}
+
+@import "style-classes"
