@@ -25642,7 +25642,7 @@ has-background-danger.is-hoverable:active {
   font-size: 1.7rem;
 }
 @media screen and (max-width: 1023px) {
-  .navbar.is-open {
+  .navbar.is-open .container {
     display: flex;
     flex-direction: column;
     height: 100vh;
