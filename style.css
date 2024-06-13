@@ -25420,7 +25420,7 @@ has-background-danger.is-hoverable:active {
 }
 #contexto .frame-qr-desktop {
   position: sticky;
-  top: 0;
+  top: 70px;
 }
 
 #riesgos {
