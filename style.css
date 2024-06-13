@@ -7131,7 +7131,7 @@ button.dropdown-item.is-selected {
 }
 
 :root {
-  --bulma-navbar-height: 3.25rem;
+  --bulma-navbar-height: 5rem;
 }
 
 .navbar {
@@ -7156,7 +7156,7 @@ button.dropdown-item.is-selected {
   --bulma-navbar-item-selected-l: var(--bulma-link-l);
   --bulma-navbar-item-selected-background-l: var(--bulma-link-l);
   --bulma-navbar-item-selected-color-l: var(--bulma-link-invert-l);
-  --bulma-navbar-item-img-max-height: 1.75rem;
+  --bulma-navbar-item-img-max-height: 3rem;
   --bulma-navbar-burger-color: var(--bulma-navbar-item-color);
   --bulma-navbar-tab-hover-background-color: transparent;
   --bulma-navbar-tab-hover-border-bottom-color: var(--bulma-link);
@@ -25630,6 +25630,34 @@ has-background-danger.is-hoverable:active {
   color: #000;
   text-decoration: underline;
   font-weight: 500;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+}
+.navbar .navbar-item {
+  color: #FFF;
+  font-family: "Bebas Neue Book", "Inter", "SF Pro", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 1.7rem;
+}
+@media screen and (max-width: 1023px) {
+  .navbar.is-open {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .navbar .navbar-menu.is-active {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+  .navbar .navbar-menu.is-active .navbar-item {
+    text-align: center;
+    font-size: 3rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

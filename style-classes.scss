@@ -93,9 +93,11 @@
 
   .wrapper-top {
     position: relative;
+
     @include mixins.touch {
       display: none;
     }
+
     img {
       position: absolute;
       z-index: 10;
@@ -122,6 +124,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 10;
+
       @include mixins.touch {
         display: none;
       }
@@ -239,10 +242,12 @@
   .the-title {
     width: 100%;
   }
+
   .hero-title {
     position: relative;
   }
-  .face{
+
+  .face {
     width: 100%;
     cursor: pointer;
   }
@@ -265,9 +270,11 @@
 
 #mascara-desktop {
   position: relative;
+
   @include mixins.until($desktop) {
     display: none;
   }
+
   img {
     width: 50vw;
   }
@@ -307,7 +314,7 @@
     display: none;
   }
 
-  img{
+  img {
     width: 100%;
   }
 
@@ -332,5 +339,39 @@
     color: #000;
     text-decoration: underline;
     font-weight: 500;
+  }
+}
+
+
+.navbar {
+  position: sticky;
+  top: 0;
+
+  .navbar-item {
+    color: #FFF;
+    font-family: "Bebas Neue Book", "Inter", "SF Pro", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 1.7rem;
+  }
+
+  @include mixins.until($desktop) {
+
+    &.is-open {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    .navbar-menu.is-active {
+      display: flex;
+      flex-grow: 1;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+
+      .navbar-item {
+        text-align: center;
+        font-size: 3rem;
+      }
+    }
   }
 }
