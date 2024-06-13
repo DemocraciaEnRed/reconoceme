@@ -25569,6 +25569,7 @@ has-background-danger.is-hoverable:active {
 }
 #objetivos .content p {
   text-align: justify;
+  font-size: 21px;
 }
 
 #mascara-desktop {
