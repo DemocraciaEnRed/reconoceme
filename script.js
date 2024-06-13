@@ -8,4 +8,19 @@ $(document).ready(function() {
       $(".navbar-menu").toggleClass("is-active");
       $(".navbar").toggleClass("is-open");
   });
+
+  // if they click on a navbar-item, close the navbar
+  $(".navbar-item").click(function() {
+    $(".navbar-burger").removeClass("is-active");
+    $(".navbar-menu").removeClass("is-active");
+    $(".navbar").removeClass("is-open");
+  });
+
+  // Make a function that when I click a section link, the site scrolls to that section
+  $(".navbar-item").click(function() {
+    var section = $(this).attr("href");
+    $("html, body").animate({
+      scrollTop: $(section).offset().top - ($(".navbar").height() + 20)
+    }, 1000);
+  });
 });
