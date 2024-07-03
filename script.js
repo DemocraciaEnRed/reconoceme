@@ -24,3 +24,10 @@ $(document).ready(function() {
     }, 1000);
   });
 });
+
+// // make an animation that when I hover over a class "face" the image gets larger
+// $(".face").hover(function() {
+//   $(this).addClass("is-large");
+// }, function() {
+//   $(this).removeClass("is-large");
+// });

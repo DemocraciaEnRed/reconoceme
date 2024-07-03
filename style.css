@@ -25375,50 +25375,50 @@ has-background-danger.is-hoverable:active {
   line-height: normal;
 }
 
-#contexto .subtitle-frame {
+#el-caso .subtitle-frame {
   border-left: 5px solid #FFF;
   padding-left: 10px;
   margin-bottom: 10px;
   padding-top: 5px;
 }
-#contexto .main-title {
+#el-caso .main-title {
   font-size: 70px;
 }
 @media screen and (min-width: 1024px) {
-  #contexto .subtitle-frame .title {
+  #el-caso .subtitle-frame .title {
     font-size: 40px;
     line-height: 1;
   }
-  #contexto .main-title {
+  #el-caso .main-title {
     font-size: 70px;
   }
-  #contexto .section {
+  #el-caso .section {
     padding-right: 0;
     padding-bottom: 0;
   }
-  #contexto .frame-wrapper {
+  #el-caso .frame-wrapper {
     padding-right: 0;
     padding-bottom: 0;
   }
-  #contexto .frame-wrapper img {
+  #el-caso .frame-wrapper img {
     margin-left: auto;
   }
-  #contexto .columns {
+  #el-caso .columns {
     padding-right: 0;
   }
-  #contexto .container.is-fluid {
+  #el-caso .container.is-fluid {
     padding-right: 0;
   }
 }
-#contexto .text-content {
+#el-caso .text-content {
   margin: 60px 0;
 }
-#contexto .text-content p {
+#el-caso .text-content p {
   text-align: justify;
   font-size: 18px;
   line-height: 1.4;
 }
-#contexto .frame-qr-desktop {
+#el-caso .frame-qr-desktop {
   position: sticky;
   top: 70px;
 }
@@ -25490,6 +25490,10 @@ has-background-danger.is-hoverable:active {
   position: absolute;
   width: 7%;
   cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+#casos-desktop .hero-title .face:hover {
+  transform: scale(1.8);
 }
 #casos-desktop .hero-title .face01 {
   top: 64%;
@@ -25521,32 +25525,24 @@ has-background-danger.is-hoverable:active {
   right: 7%;
 }
 #casos-desktop .hero-subtitle {
-  position: relative;
-  height: 300px;
-  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
   width: 100%;
 }
 #casos-desktop .hero-subtitle .face {
   width: 7%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
   cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+#casos-desktop .hero-subtitle .face:hover {
+  transform: scale(1.8);
 }
 #casos-desktop .hero-subtitle .the-subtitle {
-  position: absolute;
   width: 60%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
-#casos-desktop .hero-subtitle .face-miriam {
-  left: 15%;
-}
-#casos-desktop .hero-subtitle .face-axel {
-  left: 85%;
-}
-
 #casos-mobile .the-title {
   width: 100%;
 }
