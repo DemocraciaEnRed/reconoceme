@@ -25375,50 +25375,50 @@ has-background-danger.is-hoverable:active {
   line-height: normal;
 }
 
-#el-caso .subtitle-frame {
+#contexto .subtitle-frame {
   border-left: 5px solid #FFF;
   padding-left: 10px;
   margin-bottom: 10px;
   padding-top: 5px;
 }
-#el-caso .main-title {
+#contexto .main-title {
   font-size: 70px;
 }
 @media screen and (min-width: 1024px) {
-  #el-caso .subtitle-frame .title {
+  #contexto .subtitle-frame .title {
     font-size: 40px;
     line-height: 1;
   }
-  #el-caso .main-title {
+  #contexto .main-title {
     font-size: 70px;
   }
-  #el-caso .section {
+  #contexto .section {
     padding-right: 0;
     padding-bottom: 0;
   }
-  #el-caso .frame-wrapper {
+  #contexto .frame-wrapper {
     padding-right: 0;
     padding-bottom: 0;
   }
-  #el-caso .frame-wrapper img {
+  #contexto .frame-wrapper img {
     margin-left: auto;
   }
-  #el-caso .columns {
+  #contexto .columns {
     padding-right: 0;
   }
-  #el-caso .container.is-fluid {
+  #contexto .container.is-fluid {
     padding-right: 0;
   }
 }
-#el-caso .text-content {
+#contexto .text-content {
   margin: 60px 0;
 }
-#el-caso .text-content p {
+#contexto .text-content p {
   text-align: justify;
   font-size: 18px;
   line-height: 1.4;
 }
-#el-caso .frame-qr-desktop {
+#contexto .frame-qr-desktop {
   position: sticky;
   top: 70px;
 }
@@ -25480,51 +25480,51 @@ has-background-danger.is-hoverable:active {
   text-align: justify;
 }
 
-#casos-desktop .hero-title {
+#caso-desktop .hero-title {
   position: relative;
 }
-#casos-desktop .hero-title .the-title {
+#caso-desktop .hero-title .the-title {
   width: 100%;
 }
-#casos-desktop .hero-title .face {
+#caso-desktop .hero-title .face {
   position: absolute;
   width: 7%;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
 }
-#casos-desktop .hero-title .face:hover {
+#caso-desktop .hero-title .face:hover {
   transform: scale(1.8);
 }
-#casos-desktop .hero-title .face01 {
+#caso-desktop .hero-title .face01 {
   top: 64%;
   left: 3%;
 }
-#casos-desktop .hero-title .face02 {
+#caso-desktop .hero-title .face02 {
   top: 11%;
   left: 26%;
 }
-#casos-desktop .hero-title .face03 {
+#caso-desktop .hero-title .face03 {
   top: 49%;
   left: 35%;
 }
-#casos-desktop .hero-title .face04 {
+#caso-desktop .hero-title .face04 {
   bottom: 12%;
   right: 38%;
 }
-#casos-desktop .hero-title .face05 {
+#caso-desktop .hero-title .face05 {
   top: 20%;
   left: 65%;
 }
-#casos-desktop .hero-title .face06 {
+#caso-desktop .hero-title .face06 {
   top: -4%;
   right: 9%;
   width: 8%;
 }
-#casos-desktop .hero-title .face07 {
+#caso-desktop .hero-title .face07 {
   top: 48%;
   right: 7%;
 }
-#casos-desktop .hero-subtitle {
+#caso-desktop .hero-subtitle {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25532,24 +25532,24 @@ has-background-danger.is-hoverable:active {
   padding-bottom: 80px;
   width: 100%;
 }
-#casos-desktop .hero-subtitle .face {
+#caso-desktop .hero-subtitle .face {
   width: 7%;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
 }
-#casos-desktop .hero-subtitle .face:hover {
+#caso-desktop .hero-subtitle .face:hover {
   transform: scale(1.8);
 }
-#casos-desktop .hero-subtitle .the-subtitle {
+#caso-desktop .hero-subtitle .the-subtitle {
   width: 60%;
 }
-#casos-mobile .the-title {
+#caso-mobile .the-title {
   width: 100%;
 }
-#casos-mobile .hero-title {
+#caso-mobile .hero-title {
   position: relative;
 }
-#casos-mobile .face {
+#caso-mobile .face {
   width: 100%;
   cursor: pointer;
 }
