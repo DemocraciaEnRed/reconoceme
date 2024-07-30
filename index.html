@@ -30,8 +30,10 @@
   <!-- Meta Tags Generated with https://metatags.io -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-</head>
-
+  <!-- Import gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script></head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <body>
   <nav class="navbar is-black" role="navigation" aria-label="main navigation">
     <div class="container">
@@ -55,8 +57,8 @@
         </div>
 
         <div class="navbar-end">
-          <a class="navbar-item" href="#campania">
-            CAMPAÑA
+          <a class="navbar-item" href="#home">
+            HOME
           </a>
           <a class="navbar-item" href="#contexto">
             CONTEXTO
@@ -64,28 +66,26 @@
           <a class="navbar-item" href="#riesgos">
             RIESGOS
           </a>
-          <a class="navbar-item" href="#caso">
-            EL CASO
-          </a>
           <a class="navbar-item" href="#objetivos">
             OBJETIVOS
           </a>
-          <a class="navbar-item" href="#contacto">
-            CONTACTO
+          <a class="navbar-item" href="#mascaras">
+            MASCARAS
+          </a>
+          <a class="navbar-item" href="#prensa">
+            PRENSA
           </a>
         </div>
       </div>
     </div>
   </nav>
-  <div id="campania" class="hero is-black is-medium is-fullheight">
+  <div id="home" class="hero is-black is-medium is-fullheight">
     <div class="hero-body">
       <div class="container">
         <img src="./assets/logo-horizontal.svg" class="image main-logo-desktop is-hidden-touch"
           alt="RECONOCEME. El reconocimiento facial no reconoce tus derechos.">
         <img src="./assets/logo-vertical-mobile.svg" class="image main-logo-desktop is-hidden-desktop"
           alt="RECONOCEME. El reconocimiento facial no reconoce tus derechos.">
-        <img src="./assets/logos.png" class="image mx-auto mt-5"
-          alt="Observatorio de Derecho Informático Argentino y Democracia en Red ">
       </div>
     </div>
   </div>
@@ -100,23 +100,32 @@
             <div class="text-content">
 
               <div class="subtitle-frame">
-                <h2 class="title">¿Que es el SDRF?</h2>
+                <h2 class="title">¿Qué es el Sistema de Reconocimiento Facial SRF (SRF)?</h2>
               </div>
-              <p>Es una tecnología que utiliza algoritmos para identificar y verificar la identidad de personas a través del análisis biométrico de las características faciales. En Argentina hay un antecedente de uso de esta tecnología que representó un grave problema para la ciudadanía.</p>
+              <p>Es una tecnología que utiliza algoritmos para identificar y verificar la identidad de personas a través del análisis biométrico de las características faciales.</p>
+            </div>
+            <div class="text-content">
+              <div class="subtitle-frame">
+                <h2 class="title">¿Qué es el sistema de reconocimiento facial de prófugos? (SRFP)</h2>
+              </div>
+              <p>En Argentina hay un antecedente de uso de esta tecnología que representó un grave problema para la ciudadanía.</p>
             </div>
             <div class="text-content">
               <div class="subtitle-frame">
                 <h2 class="title">La problemática</h2>
               </div>
-              <p>En abril de 2019 se implementó en la Ciudad Autónoma de Buenos Aires este sistema para identificar a aquellas personas con pedido de captura por encontrarse rebeldes o prófugos de la justicia. Debido a algunas alertas como falta de control, transparencia en la adquisición del software y nula visibilidad de cómo se cargan y se usan las bases de datos, ODIA presentó un recurso de amparo para suspender su uso. Uno de los peligros más concretos era que el gobierno podía estar recopilando y utilizando datos sobre la ciudadanía en general y no solo de las personas prófugas sin que sepamos exactamente cómo o para qué, lo cual finalmente se comprobó.Esto violaba automáticamente derechos de imagen, de privacidad, libre circulación, igualdad ante la ley, entre muchos otros.</p>
+              <p>
+                En abril de 2019 se implementó en la Ciudad Autónoma de Buenos Aires este sistema para identificar a aquellas personas con pedido de captura por encontrarse rebeldes o prófugos ante la justicia. Debido a algunas alertas como falta de control, transparencia en la adquisición del software y nula visibilidad sobre la gestión de las bases de datos que se generaban a partir de este sistema, el Observatorio de Derecho Informático Argentino ( ODIA) presentó un recurso de amparo  y logró suspender su uso. Uno de los peligros más concretos era que el Estado podía estar recopilando y utilizando datos sobre la ciudadanía en general y no solo de las personas prófugas, sin que sepamos exactamente cómo o para qué. Esto finalmente se comprobó, ya que el sistema y sus registros no cumplían con requisitos de seguridad básicos y entre sus registros se encontraron datos de personas que no estaban incluidas en la base de datos del sistema de Consulta Nacional de Rebeldía y Capturas (Conarc). Esto significaba que el Estado no respetaba derechos constitucionales de la ciudadanía como el derecho a la privacidad o la libre circulación. 
+              </p>
             </div>
             <div class="text-content">
               <div class="subtitle-frame">
                 <h2 class="title">Ahora</h2>
               </div>
-              <p>Las declaraciones recientes de Patricia Bullrich, Ministra de Seguridad, sobre el uso del reconocimiento facial en manifestaciones, el interés del gobierno nacional posicionarlo como la solución la creciente inseguridad en algunas ciudades del país y la intención del gobierno de la Ciudad de Buenos Aires en re implementarlo, generó la alerta de las organizaciones de la sociedad civil sobre el posible abuso de esta tecnología, como sucedió en el pasado. </p>
+              <p>
+                Las declaraciones de la Ministra de Seguridad Nacional sobre el uso del reconocimiento facial con fines de vigilancia  en manifestaciones públicas (<a href="Diario Clarín / 18-12-2023" target="_blank">Diario Clarín / 18-12-2023</a>),  el interés del gobierno nacional de posicionarlo como la solución a  la creciente inseguridad en algunas ciudades del país (<a href="https://www.guaymallen.gob.ar/el-ministerio-de-seguridad-prueba-un-sistema-de-identificacion-facial-en-guaymallen/" target="_blank">Ministerio de Seguridad - Pcia. de Mendoza</a>) y la intención del Gobierno de la Ciudad de Buenos Aires en re implementarlo (<a href="https://www.jorgemacri.com/seguridad" target="_blank">Jorge Macri - Jefe de Gobierno de la Ciudad Autonoma de Buenos Aires</a>),  puso en alertas a distintas  organizaciones de la sociedad civil sobre el posible uso abusivo e inconstitucional de esta tecnología, como ya sucedió en el pasado. 
+              </p>
             </div>
-
           </div>
           <div class="column is-5 frame-wrapper is-hidden-touch">
             <div class="frame-qr-desktop">
@@ -163,32 +172,49 @@
             <div class="riesgos-wrapper py-6">
               <h2 class="title">RIESGO #1</h2>
               <p class="my-5 subtitle">Uso inadecuado de las bases de datos por parte del Estado</p>
-              <p class="text">Cuando el gobierno usa el SRF puede crear bases de datos con información sobre la ubicación y los movimientos de las personas. Por ejemplo, podrían usar estas bases de datos para buscar a personas buscadas por la ley, pero también <b>podrían usarlas para rastrear a cualquier persona</b>, incluso si esa persona no hizo nada malo.</p>
-              <a class="button is-outlined is-white is-rounded is-800 is-uppercase mt-5">Ver más</a>
+              <p class="text">Con el uso del SRF el Estado puede crear bases de datos con información de la ciudadanía como ubicación, movimientos, agrupación de civiles en espacios públicos, etc. Ante la falta de transparencia del uso de esta tecnología y la poca información sobre lo que implica y lo que no, el Estado puede usar esta información en contra de nuestra privacidad, atentando contra derechos constitucionales.</p>
             </div>
           </div>
           <div class="column is-12-mobile is-12-tablet is-4-desktop">
             <div class="riesgos-wrapper py-6">
               <h2 class="title">RIESGO #2</h2>
               <p class="my-5 subtitle">Discriminación</p>
-              <p class="text">El uso del sistema de reconocimiento facial plantea serias preocupaciones sobre la privacidad y el riesgo de discriminación. La falta de precisión de estos sistemas puede llevar a <b>identificar erróneamente a personas inocentes.</b>
-              <a class="button is-outlined is-white is-rounded is-800 is-uppercase mt-5">Ver más</a>
+              <p class="text">El uso del  SRF plantea serias preocupaciones, ya que son muchos los derechos fundamentales que se comprometen,  al ser invasivo con la esfera privada de las personas y su vez probable de conclusiones discriminatorias. Se ha advertido que estos sistemas identifican incorrectamente a personas de piel oscura, jóvenes y mujeres con mayor frecuencia, que a personas de piel clara, de mayor edad y hombres, respectivamente, lo que llevaría a reforzar la circulación de determinados estereotipos, conduciendo a actos discriminatorios completos.</p>
             </div>
           </div>
           <div class="column is-12-mobile is-12-tablet is-4-desktop">
             <div class="riesgos-wrapper py-6">
               <h2 class="title">RIESGO #3</h2>
               <p class="my-5 subtitle">Falta de control en la adquisición y uso del software</p>
-              <p class="text">El gobierno utiliza sistemas de reconocimiento facial (SRF) para identificar a personas pero estos sistemas son como "cajas negras": no tenemos conocimiento sobre cómo funcionan por dentro. Esto significa que el gobierno <b>podría estar recopilando y utilizando datos sobre nosotros sin que sepamos exactamente cómo o para qué.</b></p>
-              <a class="button is-outlined is-white is-rounded is-800 is-uppercase mt-5">Ver más</a>
+              <p class="text">Los softwares de estos sistemas utilizados hasta ahora por parte del Estado, son como cajas negras, de las que se desconoce no solo su funcionamiento técnico, sino también los términos de su adquisición. La puesta en marcha de SRF en otros países  llevó meses de un debate integral con la ciudadanía  y el proporcionamiento de información concreta por parte del Estado. En la Argentina se puso en marcha sin ninguna instancia de consulta o  intermediación pública, ni sobre su uso ni sobre los términos de su adquisición.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <div id="caso"></div>
-  <section id="caso-desktop" class="has-background-white is-hidden-touch">
+  <div id="caras"></div>
+  <section id="caras-desktop" class="has-background-white is-hidden-touch">
+    <!-- <div class="caritas-wrapper pb-6">
+      <div class="carita-reversed"><img src="./assets/faces/grabois_cara.png" class="image face" alt="Juan Grabois"></div>
+      <div class="carita-reversed"><img src="./assets/faces/edu_cara.png" class="image face" alt="Eduardo Feinmann"></div>
+      <div class="carita-reversed"><img src="./assets/faces/canosa_ojos.png" class="image face" alt="Viviana Canosa"></div>
+      <div class="carita-reversed"><img src="./assets/faces/manes_ojos.png" class="image face" alt="Facundo Manes"></div>
+      <div class="carita-reversed"><img src="./assets/faces/pato_ojos.png" class="image face" alt=""></div>
+      <div class="carita-reversed"><img src="./assets/faces/estela_ojos.png" class="image face" alt=""></div>
+      <div class="carita-reversed"><img src="./assets/faces/galperin_ojos.png" class="image face" alt=""></div>
+      <div class="carita-reversed"><img src="./assets/faces/myriam_ojos.png" class="image face" alt="Myriam bregman"></div>
+      <div class="carita-reversed"><img src="./assets/faces/axel_ojos.png" class="image face" alt="Axel Kicillof"></div>
+      <div class="carita-reversed"><img src="./assets/faces/grabois_cara.png" class="image face" alt="Juan Grabois"></div>
+      <div class="carita-reversed"><img src="./assets/faces/edu_cara.png" class="image face" alt="Eduardo Feinmann"></div>
+      <div class="carita-reversed"><img src="./assets/faces/canosa_ojos.png" class="image face" alt="Viviana Canosa"></div>
+      <div class="carita-reversed"><img src="./assets/faces/manes_ojos.png" class="image face" alt="Facundo Manes"></div>
+      <div class="carita-reversed"><img src="./assets/faces/pato_ojos.png" class="image face" alt=""></div>
+      <div class="carita-reversed"><img src="./assets/faces/estela_ojos.png" class="image face" alt=""></div>
+      <div class="carita-reversed"><img src="./assets/faces/galperin_ojos.png" class="image face" alt=""></div>
+      <div class="carita-reversed"><img src="./assets/faces/myriam_ojos.png" class="image face" alt="Myriam bregman"></div>
+      <div class="carita-reversed"><img src="./assets/faces/axel_ojos.png" class="image face" alt="Axel Kicillof"></div>
+    </div> -->
     <div class="hero-title">
       <img src="./assets/comun-title-desktop.svg" class="image the-title" alt="¿Qué tienen en común">
       <img src="./assets/faces/grabois_cara.png" class="image face face01" alt="Juan Grabois">
@@ -206,10 +232,30 @@
       <img src="./assets/faces/axel_ojos.png" class="image face face-axel" alt="Axel Kicillof">
     </div>
   </section>
-  <div id="caso-mobile" class="has-background-white is-hidden-desktop">
+  <div id="caras-mobile" class="has-background-white is-hidden-desktop">
+    <div class="caritas-wrapper py-5">
+      <div class="carita"><img src="./assets/faces/grabois_cara.png" class="image face" alt="Juan Grabois"></div>
+      <div class="carita"><img src="./assets/faces/edu_cara.png" class="image face" alt="Eduardo Feinmann"></div>
+      <div class="carita"><img src="./assets/faces/canosa_ojos.png" class="image face" alt="Viviana Canosa"></div>
+      <div class="carita"><img src="./assets/faces/manes_ojos.png" class="image face" alt="Facundo Manes"></div>
+      <div class="carita"><img src="./assets/faces/pato_ojos.png" class="image face" alt=""></div>
+      <div class="carita"><img src="./assets/faces/estela_ojos.png" class="image face" alt=""></div>
+      <div class="carita"><img src="./assets/faces/galperin_ojos.png" class="image face" alt=""></div>
+      <div class="carita"><img src="./assets/faces/myriam_ojos.png" class="image face" alt="Myriam bregman"></div>
+      <div class="carita"><img src="./assets/faces/axel_ojos.png" class="image face" alt="Axel Kicillof"></div>
+      <div class="carita"><img src="./assets/faces/grabois_cara.png" class="image face" alt="Juan Grabois"></div>
+      <div class="carita"><img src="./assets/faces/edu_cara.png" class="image face" alt="Eduardo Feinmann"></div>
+      <div class="carita"><img src="./assets/faces/canosa_ojos.png" class="image face" alt="Viviana Canosa"></div>
+      <div class="carita"><img src="./assets/faces/manes_ojos.png" class="image face" alt="Facundo Manes"></div>
+      <div class="carita"><img src="./assets/faces/pato_ojos.png" class="image face" alt=""></div>
+      <div class="carita"><img src="./assets/faces/estela_ojos.png" class="image face" alt=""></div>
+      <div class="carita"><img src="./assets/faces/galperin_ojos.png" class="image face" alt=""></div>
+      <div class="carita"><img src="./assets/faces/myriam_ojos.png" class="image face" alt="Myriam bregman"></div>
+      <div class="carita"><img src="./assets/faces/axel_ojos.png" class="image face" alt="Axel Kicillof"></div>
+    </div>
     <img src="./assets/comun-title-mobile.svg" class="image the-title is-hidden-tablet" alt="¿Qué tienen en común">
     <img src="./assets/comun-title-desktop.svg" class="image the-title is-hidden-mobile" alt="¿Qué tienen en común">
-    <div class="section">
+    <!-- <div class="section">
       <div class="container">
         <div class="columns is-mobile is-multiline is-centered">
           <div class="column is-narrow">
@@ -241,48 +287,90 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <img src="./assets/comun-subtitle2-mobile.svg" class="image the-title px-6" alt="¿Qué tienen en común">
-    <div class="spacer"></div>
+    <div class="caritas-wrapper py-5">
+      <div class="carita-reversed"><img src="./assets/faces/grabois_cara.png" class="image face" alt="Juan Grabois"></div>
+      <div class="carita-reversed"><img src="./assets/faces/edu_cara.png" class="image face" alt="Eduardo Feinmann"></div>
+      <div class="carita-reversed"><img src="./assets/faces/canosa_ojos.png" class="image face" alt="Viviana Canosa"></div>
+      <div class="carita-reversed"><img src="./assets/faces/manes_ojos.png" class="image face" alt="Facundo Manes"></div>
+      <div class="carita-reversed"><img src="./assets/faces/pato_ojos.png" class="image face" alt=""></div>
+      <div class="carita-reversed"><img src="./assets/faces/estela_ojos.png" class="image face" alt=""></div>
+      <div class="carita-reversed"><img src="./assets/faces/galperin_ojos.png" class="image face" alt=""></div>
+      <div class="carita-reversed"><img src="./assets/faces/myriam_ojos.png" class="image face" alt="Myriam bregman"></div>
+      <div class="carita-reversed"><img src="./assets/faces/axel_ojos.png" class="image face" alt="Axel Kicillof"></div>
+      <div class="carita-reversed"><img src="./assets/faces/grabois_cara.png" class="image face" alt="Juan Grabois"></div>
+      <div class="carita-reversed"><img src="./assets/faces/edu_cara.png" class="image face" alt="Eduardo Feinmann"></div>
+      <div class="carita-reversed"><img src="./assets/faces/canosa_ojos.png" class="image face" alt="Viviana Canosa"></div>
+      <div class="carita-reversed"><img src="./assets/faces/manes_ojos.png" class="image face" alt="Facundo Manes"></div>
+      <div class="carita-reversed"><img src="./assets/faces/pato_ojos.png" class="image face" alt=""></div>
+      <div class="carita-reversed"><img src="./assets/faces/estela_ojos.png" class="image face" alt=""></div>
+      <div class="carita-reversed"><img src="./assets/faces/galperin_ojos.png" class="image face" alt=""></div>
+      <div class="carita-reversed"><img src="./assets/faces/myriam_ojos.png" class="image face" alt="Myriam bregman"></div>
+      <div class="carita-reversed"><img src="./assets/faces/axel_ojos.png" class="image face" alt="Axel Kicillof"></div>
+    </div>
   </div>
   <div id="objetivos" class="section has-text-white">
     <div class="container">
       <div class="columns is-mobile">
-        <div class="column is-12-mobile is-12-tablet is-6-desktop">
+        <div class="column is-12-mobile is-12-tablet is-9-desktop is-8-widescreen">
           <div class="spacer"></div>
           <h2 class="title">¿POR QUÉ HACEMOS ESTA CAMPAÑA?</h2>
           <div class="content">
-            <p>Queremos concientizar sobre los riesgos del reconocimiento facial, sobre los derechos civiles y la privacidad de las personas. Este sistema ha demostrado tener falencias y es objeto de discusiones en todo el mundo por los riesgos que implica para todas las personas sujetas a derecho. Sienta un precedente sobre el límite del poder estatal a la esfera privada.</p>
-            <p>También buscamos, a escala local, enfatizar la necesidad de que el gobierno rinda cuentas en el uso de estas tecnologías y la importancia de aplicar regulaciones efectivas para proteger los derechos digitales de las personas.</p>
+            <p>Queremos concientizar sobre los SRF, sobre los derechos civiles, la privacidad de las personas y la necesidad de ponerle límites al Estado en su uso. Este sistema ha demostrado tener falencias y es objeto de discusiones en todo el mundo por los riesgos que implica.</p>
+            <p>También buscamos, a escala local, enfatizar la importancia de que el Estado rinda cuentas del uso de estas tecnologías y la importancia de contar con un marco regulatorio para su uso.</p>
             <p>Queremos instalar el debate público sobre estos sistemas.</p>
           </div>
           <div class="is-flex is-flex-direction-row is-justify-content-flex-start is-align-items-center">
             <a class="button is-outlined is-white is-rounded is-800 is-uppercase">COMPARTIR INFO</a>
-            <div class="is-600 pl-3" style="line-height: 1.2">Compartí este link y ayúdanos vos también a informar sobre
-              los riesgos del srf.</div>
+            <div class="is-600 pl-3" style="line-height: 1.2">Compartí este link y ayúdanos vos también a informar sobre los riesgos del SRF.</div>
           </div>
           <div class="spacer"></div>
         </div>
       </div>
     </div>
   </div>
-  <div id="mascara"></div>
-  <div id="mascara-desktop" class="has-background-black has-text-white">
-    <img src="./assets/mascara.jpg" class="image" alt="Imprimí tu máscara">
-    <div class="container">
-      <div class="columns">
-        <div class="column is-6 is-offset-6 p-6 pr-0">
+  <div id="mascaras"></div>
+  <div id="mascaras-desktop" class="has-background-black has-text-white">
+    <!-- <img src="./assets/mascara.jpg" class="image left-image" alt="Imprimí tu máscara"> -->
+      <div class="columns fullheight">
+        <div class="column is-6 p-6 pr-0 withbg">
+        </div>
+        <div class="column is-6 p-6 pr-0">
           <h2 class="title">IMPRIMÍ<br>TU MÁSCARA</h2>
           <div class="content">
-            <p>Usala para cubrirte del SRF o ponétela y compartila en redes, arrobándonos con el #RECONOCEME para
-              ayudarnos en la campaña.</p>
+            <p>Usala para cubrirte del SRF o ponétela y compartila en redes, arrobándonos con el #RECONOCEME para ayudarnos en la campaña.</p>
           </div>
-          <a class="button is-large is-outlined is-white is-rounded is-800 is-uppercase">DESCARGAR AQUÍ</a>
+          <h4 class="title is-size-3">Descargá tu máscara&nbsp;&nbsp;<i class="fas fa-hand-point-down is-size-4 fa-fw"></i></h4>
+          <!-- <a class="button is-large is-outlined is-white is-rounded is-800 is-uppercase">DESCARGAR AQUÍ</a> -->
+          <div class="columns is-multiline is-vcentered">
+            <div class="column is-narrow py-1 px-2">
+              <img src="./assets/faces/grabois_cara.png" class="image face" alt="Juan Grabois">
+            </div>
+            <div class="column is-narrow py-1 px-2">
+              <img src="./assets/faces/edu_cara.png" class="image face" alt="Eduardo Feinmann">
+            </div>
+            <div class="column is-narrow py-1 px-2">
+              <img src="./assets/faces/canosa_ojos.png" class="image face" alt="Viviana Canosa">
+            </div>
+            <div class="column is-narrow py-1 px-2">
+              <img src="./assets/faces/manes_ojos.png" class="image face" alt="Facundo Manes">
+            </div>
+            <div class="column is-narrow py-1 px-2">
+              <img src="./assets/faces/pato_ojos.png" class="image face" alt="">
+            </div>
+            <div class="column is-narrow py-1 px-2">
+              <img src="./assets/faces/estela_ojos.png" class="image face" alt="">
+            </div>
+            <div class="column is-narrow py-1 px-2">
+              <img src="./assets/faces/galperin_ojos.png" class="image face" alt="">
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <div id="mascara-mobile" class="has-background-black has-text-white">
+  <div id="mascaras-mobile" class="has-background-black has-text-white">
     <div class="section">
       <div class="container py-6">
         <h2 class="title">IMPRIMÍ<br>TU MÁSCARA</h2>
@@ -290,18 +378,145 @@
           <p>Usala para cubrirte del SRF o ponétela y compartila en redes, arrobándonos con el #RECONOCEME para
             ayudarnos en la campaña.</p>
         </div>
-        <a class="button is-large is-outlined is-white is-rounded is-800 is-uppercase">DESCARGAR AQUÍ</a>
+        <h4 class="title is-size-3">Descargá tu máscara&nbsp;&nbsp;<i class="fas fa-hand-point-down is-size-4 fa-fw"></i></h4>
+        <div class="columns is-multiline is-vcentered is-mobile">
+          <div class="column is-narrow py-1 px-2">
+            <img src="./assets/faces/grabois_cara.png" class="image face" alt="Juan Grabois">
+          </div>
+          <div class="column is-narrow py-1 px-2">
+            <img src="./assets/faces/edu_cara.png" class="image face" alt="Eduardo Feinmann">
+          </div>
+          <div class="column is-narrow py-1 px-2">
+            <img src="./assets/faces/canosa_ojos.png" class="image face" alt="Viviana Canosa">
+          </div>
+          <div class="column is-narrow py-1 px-2">
+            <img src="./assets/faces/manes_ojos.png" class="image face" alt="Facundo Manes">
+          </div>
+          <div class="column is-narrow py-1 px-2">
+            <img src="./assets/faces/pato_ojos.png" class="image face" alt="Patricia Bullrich">
+          </div>
+          <div class="column is-narrow py-1 px-2">
+            <img src="./assets/faces/estela_ojos.png" class="image face" alt="Estela de Carloto">
+          </div>
+          <div class="column is-narrow py-1 px-2">
+            <img src="./assets/faces/galperin_ojos.png" class="image face" alt="Galperin">
+          </div>
+        </div>
       </div>
     </div>
     <img src="./assets/mascara.jpg" class="image" alt="Imprimí tu máscara">
   </div>
-  <div id="contacto" class="py-6 has-background-white">
+  <div id="prensa" class="py-6 has-background-white has-text-black">
     <div class="section">
-      <div class="content">
-        <img src="./assets/contact-desktop.svg" class="image mx-auto" alt="">
-        <div class="buttons is-centered mt-6">
-          <a class="button is-large is-outlined is-black is-rounded is-800 is-uppercase">COMPLETÁ EL FORM</a>
+      <div class="container">
+        <!-- <img src="./assets/contact-desktop.svg" class="image mx-auto" alt=""> -->
+         <h1 class="title title-segment has-text-black has-text-centered">PRENSA</h1>
+        <div class="news-grid">
+          <div class="grid-sizer"></div>
+          <div class="grid-item">
+            <div class="box">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-64x64">
+                    <img src="./assets/logo-wired.png" alt="Wired">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-3">The Twisted Eye in the Sky Over Buenos Aires</p>
+                </div>
+              </div>
+              <div class="content">
+                <p>A scandal unfolding in Argentina shows the dangers of implementing facial recognition—even with laws and limits in place.</p>
+                <div class="buttons is-right">
+                  <a href="https://www.wired.com/story/buenos-aires-facial-recognition-scandal/" target="_blank" class="button is-white is-outlined is-rounded is-800 is-uppercase">Ver más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="box">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-64x64">
+                    <img src="./assets/logo-chequeado.png" alt="Chequeado">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-3">Por qué se suspendió el sistema de reconocimiento facial de la Ciudad de Buenos Aires</p>
+                </div>
+              </div>
+              <div class="content">
+                <p>Un fallo judicial suspendió el Sistema de Reconocimiento Facial de Prófugos (SRFP) de la Ciudad de Buenos Aires.</p>
+                <div class="buttons is-right">
+                  <a href="https://chequeado.com/el-explicador/porque-se-suspendio-el-sistema-de-reconocimiento-facial-de-la-ciudad-de-buenos-aires/" target="_blank" class="button is-white is-outlined is-rounded is-800 is-uppercase">Ver más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="box">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-64x64">
+                    <img src="./assets/logo-cnn.webp" alt="CNN en Español">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-3">La Ciudad de Buenos Aires accedió a los datos biométricos de millones de personas</p>
+                </div>
+              </div>
+              <div class="content">
+                <p>El Ministerio de Seguridad de la Ciudad de Buenos Aires tendría que haber accedido únicamente a datos personales de 40.000 prófugos de la justicia, pero obtuvo registros biométricos de millones de ciudadanos. ¿Para qué se usaron esos datos personales?</p>
+                <div class="buttons is-right">
+                  <a href="https://cnnespanol.cnn.com/video/argentina-buenos-aires-polemica-camaras-ignacio-grimaldi-perspectivas-buenos-aires/" target="_blank" class="button is-white is-outlined is-rounded is-800 is-uppercase">Ver más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="box">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-64x64">
+                    <img src="./assets/logo-clarin.png" alt="Clarin">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4">Por qué el reconocimiento facial sigue suspendido en la Ciudad de Buenos Aires: claves para entender los usos y riesgos de esta inteligencia artificial</p>
+                </div>
+              </div>
+              <div class="content">
+                <p>El SRFP se usa para reconocer prófugos de la Justicia, pero fue declarado inconstitucional en 2022. Luego de una audiencia, la Justicia porteña ratificó la decisión de no reactivarlo. Las claves para entender el conflicto.</p>
+                <div class="buttons is-right">
+                  <a href="https://www.clarin.com/tecnologia/reconocimiento-facial-sigue-suspendido-ciudad-buenos-aires-claves-entender-usos-riesgos-inteligencia-artificial_0_eT30Dwx2Gm.html" target="_blank" class="button is-white is-outlined is-rounded is-800 is-uppercase">Ver más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="box">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-64x64">
+                    <img src="./assets/logo-odia.png" alt="Clarin">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4">Contra el Sistema de Reconocimiento Facial de la Ciudad de Buenos Aires</p>
+                </div>
+              </div>
+              <div class="content">
+                <p>Aunque pueda parecer una buena idea, la implementación pone en riesgo nuestros derechos. Seguí leyendo para enterarte por qué, qué hicimos al respecto y cómo podés ayudarnos.</p>
+                <div class="buttons is-right">
+                  <a href="https://srfp.odia.legal/" target="_blank" class="button is-white is-outlined is-rounded is-800 is-uppercase">Ver más</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- <div class="buttons is-centered mt-6">
+          <a class="button is-large is-outlined is-black is-rounded is-800 is-uppercase">COMPLETÁ EL FORM</a>
+        </div> -->
       </div>
     </div>
   </div>
@@ -309,12 +524,15 @@
     <div class="container">
       <div class="columns">
         <div class="column is-hidden-desktop has-text-centered">
-          <p>Reconoceme es un proyecto de <span class="is-500">DEMOCRACIA EN RED</span>, una ONG latinoamericana con
-            base en Buenos Aires, Argentina.</p>
+          <img src="./assets/logos.png" class="image mb-3"
+          alt="Observatorio de Derecho Informático Argentino y Democracia en Red ">
+          <p>Reconoceme es un proyecto de <a href="https://odia.legal/" class="has-text-black is-500" target="_blank">Observatorio de Derecho Informático Argentino</a> y <a href="https://democraciaenred.org" class="has-text-black is-500" target="_blank">DEMOCRACIA EN RED</a></p>
         </div>
         <div class="column is-hidden-touch">
-          <p>Reconoceme es un proyecto de Democracia en Red,</p>
-          <p>una ONG latinoamericana con base en Buenos Aires, Argentina.</p>
+          <img src="./assets/logos.png" class="image mb-3"
+          alt="Observatorio de Derecho Informático Argentino y Democracia en Red ">
+          <p>Reconoceme es un proyecto de</p>
+          <p><a href="https://odia.legal/" class="has-text-black is-500" target="_blank">Observatorio de Derecho Informático Argentino</a> y <a href="https://democraciaenred.org" class="has-text-black is-500" target="_blank">DEMOCRACIA EN RED</a></p>
         </div>
         <div class="column is-flex is-align-items-center is-justify-content-center is-hidden-desktop">
           <img src="./assets/circles.svg" class="image mr-3" width="90" alt="">
