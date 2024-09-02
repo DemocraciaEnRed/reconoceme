@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" href="/favicon.png">
   <!-- Primary Meta Tags -->
   <title>RECONOCEME — El reconocimiento facial NO reconoce TUS derechos</title>
   <meta name="title" content="RECONOCEME — El reconocimiento facial NO reconoce TUS derechos" />
@@ -31,7 +32,7 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <!-- Import gsap -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script></head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q5M7KSFH6R"></script>
@@ -41,6 +42,7 @@
     gtag('js', new Date());
     gtag('config', 'G-Q5M7KSFH6R');
   </script>
+</head>
 <body>
   <nav class="navbar is-black" role="navigation" aria-label="main navigation">
     <div class="container">
@@ -136,8 +138,8 @@
           </div>
           <div class="column is-5 frame-wrapper is-hidden-touch">
             <div class="frame-qr-desktop">
-              <a href="https://google.com">
-                <img class="image" src="./assets/frame-qr-desktop-2.png" alt="">
+              <a href="https://democraciaenred.nyc3.digitaloceanspaces.com/projects/reconoceme/reconoceme-org-cautelar.pdf" target="_blank">
+                <img class="image" src="./assets/frame-qr-desktop-2.png" alt="Descargá el fallo">
               </a>
             </div>
           </div>
@@ -202,26 +204,6 @@
   </section>
   <div id="caras"></div>
   <section id="caras-desktop" class="has-background-white is-hidden-touch">
-    <!-- <div class="caritas-wrapper pb-6">
-      <div class="carita-reversed"><img src="./assets/faces/grabois_cara.png" class="image face" alt="Juan Grabois"></div>
-      <div class="carita-reversed"><img src="./assets/faces/edu_cara.png" class="image face" alt="Eduardo Feinmann"></div>
-      <div class="carita-reversed"><img src="./assets/faces/canosa_ojos.png" class="image face" alt="Viviana Canosa"></div>
-      <div class="carita-reversed"><img src="./assets/faces/manes_ojos.png" class="image face" alt="Facundo Manes"></div>
-      <div class="carita-reversed"><img src="./assets/faces/pato_ojos.png" class="image face" alt=""></div>
-      <div class="carita-reversed"><img src="./assets/faces/estela_ojos.png" class="image face" alt=""></div>
-      <div class="carita-reversed"><img src="./assets/faces/galperin_ojos.png" class="image face" alt=""></div>
-      <div class="carita-reversed"><img src="./assets/faces/myriam_ojos.png" class="image face" alt="Myriam bregman"></div>
-      <div class="carita-reversed"><img src="./assets/faces/axel_ojos.png" class="image face" alt="Axel Kicillof"></div>
-      <div class="carita-reversed"><img src="./assets/faces/grabois_cara.png" class="image face" alt="Juan Grabois"></div>
-      <div class="carita-reversed"><img src="./assets/faces/edu_cara.png" class="image face" alt="Eduardo Feinmann"></div>
-      <div class="carita-reversed"><img src="./assets/faces/canosa_ojos.png" class="image face" alt="Viviana Canosa"></div>
-      <div class="carita-reversed"><img src="./assets/faces/manes_ojos.png" class="image face" alt="Facundo Manes"></div>
-      <div class="carita-reversed"><img src="./assets/faces/pato_ojos.png" class="image face" alt=""></div>
-      <div class="carita-reversed"><img src="./assets/faces/estela_ojos.png" class="image face" alt=""></div>
-      <div class="carita-reversed"><img src="./assets/faces/galperin_ojos.png" class="image face" alt=""></div>
-      <div class="carita-reversed"><img src="./assets/faces/myriam_ojos.png" class="image face" alt="Myriam bregman"></div>
-      <div class="carita-reversed"><img src="./assets/faces/axel_ojos.png" class="image face" alt="Axel Kicillof"></div>
-    </div> -->
     <div class="hero-title">
       <img src="./assets/comun-title-desktop.svg" class="image the-title" alt="¿Qué tienen en común">
       <img src="./assets/faces/grabois_cara.png" class="image face face01" alt="Juan Grabois">
@@ -348,8 +330,10 @@
           <div class="content">
             <p>Usala para cubrirte del SRF o ponétela y compartila en redes, arrobándonos con el #RECONOCEME para ayudarnos en la campaña.</p>
           </div>
-          <h4 class="title is-size-3">Descargá tu máscara&nbsp;&nbsp;<i class="fas fa-hand-point-down is-size-4 fa-fw"></i></h4>
-          <!-- <a class="button is-large is-outlined is-white is-rounded is-800 is-uppercase">DESCARGAR AQUÍ</a> -->
+          <div class="mb-5">
+            <a class="button is-outlined is-large is-white is-rounded is-800 is-uppercase" href="https://democraciaenred.nyc3.digitaloceanspaces.com/projects/reconoceme/reconoceme-org-mascaras.zip" target="_blank">DESCARGÁ TU MASCARA</a>
+          </div>
+            
           <div class="columns is-multiline is-vcentered">
             <div class="column is-narrow py-1 px-2">
               <img src="./assets/faces/grabois_cara.png" class="image face" alt="Juan Grabois">
@@ -385,7 +369,9 @@
           <p>Usala para cubrirte del SRF o ponétela y compartila en redes, arrobándonos con el #RECONOCEME para
             ayudarnos en la campaña.</p>
         </div>
-        <h4 class="title is-size-3">Descargá tu máscara&nbsp;&nbsp;<i class="fas fa-hand-point-down is-size-4 fa-fw"></i></h4>
+        <div class="mb-6">
+          <a class="button is-outlined is-white is-rounded is-800 is-uppercase" href="https://democraciaenred.nyc3.digitaloceanspaces.com/projects/reconoceme/reconoceme-org-mascaras.zip" target="_blank">DESCARGÁ TU MASCARA</a>
+        </div>
         <div class="columns is-multiline is-vcentered is-mobile">
           <div class="column is-narrow py-1 px-2">
             <img src="./assets/faces/grabois_cara.png" class="image face" alt="Juan Grabois">

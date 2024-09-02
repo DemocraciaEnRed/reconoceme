@@ -160,6 +160,9 @@
   font-family: "Bebas Neue", "Inter", "SF Pro", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
+// redefine --bulma-navbar-item-img-max-height to 6em
+$navbar-item-img-max-height: 6em;
+
 // make a for loop to generate classes of font-weight named .is-100 to .is-800
 @for $i from 100 through 800 {
   .is-#{$i} {

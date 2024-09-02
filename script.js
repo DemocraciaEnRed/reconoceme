@@ -141,13 +141,28 @@ $(document).ready(function() {
     }, 1000);
   });
 
-  $('.news-grid').masonry({
-    // options
-    percentPosition: true,
-    columnWidth: '.grid-sizer',
-    itemSelector: '.grid-item',
-    // gutter: 10
-  });
+  // check if masonry is available
+  if ($('.news-grid').length) {
+    $('.news-grid').masonry({
+      // options
+      percentPosition: true,
+      columnWidth: '.grid-sizer',
+      itemSelector: '.grid-item',
+      // gutter: 10
+    });
+  }
+
+  // check if masonry is available
+  
+  setTimeout(function() {
+    $('.news-grid').masonry({
+      // options
+      percentPosition: true,
+      columnWidth: '.grid-sizer',
+      itemSelector: '.grid-item',
+      // gutter: 10
+    });
+  }, 1000);
 
   function checkWindowSize() {
     if ($(window).width() <= 1023) {
