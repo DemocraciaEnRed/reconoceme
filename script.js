@@ -1,7 +1,27 @@
 let facesLoop;
 let facesLoopReversed;
 
+const video = document.getElementById("theVideo");
+const playButton = document.getElementById("playButton");
 
+playButton.addEventListener("click", function() {
+    if (video.paused) {
+        video.play();
+    } else {
+        video.pause();
+    }
+    // playButton.classList.toggle("is-hidden");
+});
+
+// if the video is playing, hide the play button
+video.addEventListener("play", function() {
+  playButton.classList.add("is-hidden");
+})
+
+// if the video is paused, show the play button
+video.addEventListener("pause", function() {
+  playButton.classList.remove("is-hidden");
+})
 
 function playAnimation() {
   if(facesLoop) {
