@@ -14,11 +14,11 @@
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://democraciaenred.github.io/reconoceme/" />
+  <meta property="og:url" content="https://reconoceme.org/" />
   <meta property="og:title" content="RECONOCEME — El reconocimiento facial NO reconoce TUS derechos" />
   <meta property="og:description"
     content="Queremos concientizar sobre los riesgos del reconocimiento facial, sobre los derechos civiles y la privacidad de las personas. Este sistema ha demostrado tener falencias y es objeto de discusiones en todo el mundo por los riesgos que implica para todas las personas sujetas a derecho." />
-  <meta property="og:image" content="https://democraciaenred.github.io/reconoceme/sharer-01.jpg" />
+  <meta property="og:image" content="https://reconoceme.org/sharer-02.png" />
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
@@ -26,7 +26,7 @@
   <meta property="twitter:title" content="RECONOCEME — El reconocimiento facial NO reconoce TUS derechos" />
   <meta property="twitter:description"
     content="Queremos concientizar sobre los riesgos del reconocimiento facial, sobre los derechos civiles y la privacidad de las personas. Este sistema ha demostrado tener falencias y es objeto de discusiones en todo el mundo por los riesgos que implica para todas las personas sujetas a derecho." />
-  <meta property="twitter:image" content="https://democraciaenred.github.io/reconoceme/sharer-01.jpg" />
+  <meta property="twitter:image" content="https://reconoceme.org/sharer-02.png" />
 
   <!-- Meta Tags Generated with https://metatags.io -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -36,6 +36,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q5M7KSFH6R"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.2/sharer.min.js"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -224,9 +225,9 @@
       <img src="./assets/faces/edu_cara.png" class="image face face02" alt="Eduardo Feinmann">
       <img src="./assets/faces/canosa_ojos.png" class="image face face03" alt="Viviana Canosa">
       <img src="./assets/faces/manes_ojos.png" class="image face face04" alt="Facundo Manes">
-      <img src="./assets/faces/pato_ojos.png" class="image face face05" alt="">
-      <img src="./assets/faces/estela_ojos.png" class="image face face06" alt="">
-      <img src="./assets/faces/galperin_ojos.png" class="image face face07" alt="">
+      <img src="./assets/faces/pato_ojos.png" class="image face face05" alt="Patricia Bullrich">
+      <img src="./assets/faces/estela_ojos.png" class="image face face06" alt="Estela de Carloto">
+      <img src="./assets/faces/galperin_ojos.png" class="image face face07" alt="Galperin">
     </div>
     <div class="hero-subtitle">
       <img src="./assets/faces/myriam_ojos.png" class="image face face-miriam" alt="Myriam bregman">
@@ -325,9 +326,15 @@
             <p>Queremos instalar el debate público sobre estos sistemas.</p>
           </div>
           <div class="is-flex is-flex-direction-row is-justify-content-flex-start is-align-items-center">
-            <a class="button is-outlined is-white is-rounded is-800 is-uppercase">COMPARTIR INFO</a>
-            <div class="is-600 pl-3" style="line-height: 1.2">Compartí este link y ayúdanos vos también a informar sobre los riesgos del SRF.</div>
+            <button class="mr-2" data-sharer="threads" data-title="El Reconocimiento Facial no reconoce tus derechos. Conocé mas:" data-url="https://reconoceme.org"><i class="fab fa-3x fa-square-threads"></i></button>
+            <button class="mx-2" data-sharer="twitter" data-title="El Reconocimiento Facial no reconoce tus derechos. Conocé mas:" data-url="https://reconoceme.org"><i class="fab fa-3x fa-square-x-twitter"></i></button>
+            <button class="mx-2" data-sharer="whatsapp" data-title="El Reconocimiento Facial no reconoce tus derechos. Conocé mas:" data-url="https://reconoceme.org"><i class="fab fa-3x fa-square-whatsapp"></i></button>
+            <button class="mx-2" data-sharer="telegram" data-title="El Reconocimiento Facial no reconoce tus derechos. Conocé mas:" data-url="https://reconoceme.org"><i class="fab fa-3x fa-telegram"></i></button>
+            <button class="mx-2" data-sharer="facebook" data-title="El Reconocimiento Facial no reconoce tus derechos. Conocé mas:" data-url="https://reconoceme.org"><i class="fab fa-3x fa-square-facebook"></i></button>
+            <button class="ml-2" data-sharer="linkedin" data-url="https://reconoceme.org"><i class="fab fa-3x fa-linkedin"></i></button>
+            <div class="is-600 pl-3 is-hidden-mobile" style="line-height: 1.2">Compartí este link y ayúdanos vos también a informar sobre los riesgos del SRF.</div>
           </div>
+          <div class="is-600 is-uppercase mt-5 is-hidden-tablet is-size-5">Compartí este link y ayúdanos vos también a informar sobre los riesgos del SRF.</div>
           <div class="spacer"></div>
         </div>
       </div>
@@ -344,8 +351,8 @@
           <div class="content">
             <p>Usala para cubrirte del SRF o ponétela y compartila en redes, arrobándonos con el #RECONOCEME para ayudarnos en la campaña.</p>
           </div>
-          <div class="mb-5">
-            <a class="button is-outlined is-large is-white is-rounded is-800 is-uppercase" href="https://democraciaenred.nyc3.digitaloceanspaces.com/projects/reconoceme/reconoceme-org-mascaras.zip" target="_blank">DESCARGÁ TU MASCARA</a>
+          <div class="mb-6">
+            <a class="button is-outlined is-large is-white is-rounded is-800 is-uppercase" href="https://democraciaenred.nyc3.digitaloceanspaces.com/projects/reconoceme/reconoceme-org-mascaras.zip" target="_blank">DESCARGÁ TU MÁSCARA</a>
           </div>
             
           <div class="columns is-multiline is-vcentered">
@@ -384,7 +391,7 @@
             ayudarnos en la campaña.</p>
         </div>
         <div class="mb-6">
-          <a class="button is-outlined is-white is-rounded is-800 is-uppercase" href="https://democraciaenred.nyc3.digitaloceanspaces.com/projects/reconoceme/reconoceme-org-mascaras.zip" target="_blank">DESCARGÁ TU MASCARA</a>
+          <a class="button is-outlined is-white is-rounded is-800 is-uppercase" href="https://democraciaenred.nyc3.digitaloceanspaces.com/projects/reconoceme/reconoceme-org-mascaras.zip" target="_blank">DESCARGÁ TU MÁSCARA</a>
         </div>
         <div class="columns is-multiline is-vcentered is-mobile">
           <div class="column is-narrow py-1 px-2">
