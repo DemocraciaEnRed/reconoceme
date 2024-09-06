@@ -25362,7 +25362,7 @@ has-background-danger.is-hoverable:active {
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
-  height: 100vh;
+  height: 0;
   width: 100%;
   background-color: #000;
 }
