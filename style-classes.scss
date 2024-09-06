@@ -38,12 +38,24 @@
 
 
 #home {
-  .hero-body {
-    background: url('./assets/bg-hero-top.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  position: relative;
+  video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
   }
+  // .hero-body {
+    // position: absolute;
+    // top: 0;
+    // background: url('./assets/bg-hero-top.jpg');
+    // background-size: cover;
+    // background-position: center;
+    // background-repeat: no-repeat;
+  // }
 
   .main-logo-desktop {
     width: 100%;

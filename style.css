@@ -25385,11 +25385,17 @@ has-background-danger.is-hoverable:active {
   cursor: pointer;
 }
 
-#home .hero-body {
-  background: url("./assets/bg-hero-top.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+#home {
+  position: relative;
+}
+#home video {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
 }
 #home .main-logo-desktop {
   width: 100%;
