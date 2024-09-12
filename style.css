@@ -25361,10 +25361,17 @@ has-background-danger.is-hoverable:active {
 
 .video-container {
   position: relative;
-  padding-bottom: 56.25%;
+  background-color: #000;
+  padding-bottom: 177.78%; /* (16 / 9) * 100 for vertical mode */
   height: 0;
   width: 100%;
-  background-color: #000;
+}
+@media screen and (min-width: 769px) {
+  .video-container {
+    padding-bottom: 56.25%;
+    height: 0;
+    width: 100%;
+  }
 }
 .video-container video {
   position: absolute;

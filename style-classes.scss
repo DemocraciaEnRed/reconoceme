@@ -8,13 +8,18 @@
 
 .video-container{
   position: relative;
-  // width: fit-content;
-  padding-bottom: 56.25%;
-  height: 0;
-  // height: 100vh;
-  width: 100%;
   background-color: #000;
+  padding-bottom: 177.78%; /* (16 / 9) * 100 for vertical mode */
+  height: 0;
+  width: 100%;
 
+  @include mixins.from($tablet) {
+    // width: fit-content;
+    padding-bottom: 56.25%;
+    height: 0;
+    // height: 100vh;
+    width: 100%;
+  }
   video {
     position: absolute;
     top: 0;
