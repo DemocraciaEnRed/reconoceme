@@ -1,15 +1,18 @@
 {
   "name": "reconoceme",
   "version": "1.0.0",
-  "description": "A package for recognizing things",
-  "author": "Zaqueo",
+  "author": "Democracia en Red",
   "license": "MIT",
   "scripts": {
-    "build-bulma": "sass --load-path=node_modules style.scss style.css",
-    "start": "npm run build-bulma -- --watch"
+    "build-bulma": "sass --load-path=node_modules style.scss public/style.css",
+    "start": "npm run build-bulma -- --watch",
+    "deploy": "gh-pages -d public"
   },
   "dependencies": {
     "bulma": "^1.0.1",
     "sass": "^1.77.5"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
   }
 }
