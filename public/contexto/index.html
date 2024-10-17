@@ -37,6 +37,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q5M7KSFH6R"></script>
   <script src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.2/sharer.min.js"></script>
+  <script src="/assets/vertical-timeline.js"></script>
+  <link rel="stylesheet" href="/assets/vertical-timeline-custom.css">
   <script>
     // window.dataLayer = window.dataLayer || [];
     // function gtag(){dataLayer.push(arguments);}
@@ -49,9 +51,9 @@
     <div class="container">
 
       <div class="navbar-brand">
-        <div class="navbar-item">
+        <a class="navbar-item" href="/">
           <img src="/assets/logo-reconoceme.svg" alt="RECONOCEME. El reconocimiento facial no reconoce tus derechos.">
-        </div>
+        </a>
 
         <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
           <span aria-hidden="true"></span>
@@ -92,42 +94,271 @@
       </div>
     </div>
   </nav>
-  <div class="hero is-white">
+  <div class="hero is-white is-medium">
     <div class="hero-body">
       <div class="container">
-        contexto...
+        <img src="/assets/contexto/contexto-title.png" class="image my-5" alt="">
+        <div class="spacer"></div>
+        <div class="columns">
+          <div class="column is-6">
+            <h3 class="title is-2">Es una tecnología que utiliza algoritmos para identificar y verificar la identidad de personas a través del análisis biométrico de las características faciales.</h3>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-offset-6 is-6">
+            <h3 class="title is-2">Es una tecnología que utiliza algoritmos para identificar y verificar la identidad de personas a través del análisis biométrico de las características faciales.</h3>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+  <div id="allanamiento" class="section has-text-white">
+    <div class="container">
+      <div class="spacer"></div>
+      <div class="columns is-mobile">
+        <div class="column is-12-mobile is-12-tablet is-9-desktop is-8-widescreen">
+          <h2 class="title section-titles">ALLANAMIENTO</h2>
+          <h3 class="title is-3">Suspendisse a sodales nulla, sed semper nisi. Cras lobortis volutpat nunc. Proin tincidunt enim in felis aliquet, a ultricies purus bibendum. Quisque in ultrices lectus. Nulla at urna diam. Proin sodales lobortis libero eu facilisis. In sem urna, aliquam vel consectetur sit amet, pulvinar sit amet lectus. Quisque molestie dapibus libero non pellentesque. Vivamus quam arcu, dictum quis hendrerit eget, lobortis eu felis.</h3>
+        </div>
+      </div>
+      <div class="spacer"></div>
+      <div class="columns has-text-centered">
+        <div class="column">
+          <img src="/assets/contexto/allanamiento-1.png" class="image mx-auto" alt="Primero">
+          <h3 class="title is-2 mt-6 mb-0">ALLANAMIENTO</h3>
+        </div>
+        <div class="column">
+          <img src="/assets/contexto/allanamiento-2.png" class="image mx-auto" alt="Segundo">
+          <h3 class="title is-2 mt-6 mb-0">PEDIDO DE ACCESO A LA INFORMACIÓN</h3>
+        </div>
+        <div class="column">
+          <img src="/assets/contexto/allanamiento-3.png" class="image mx-auto" alt="Tercero">
+          <h3 class="title is-2 mt-6 mb-0">PERICIA DIGITAL</h3>
+        </div>
+      </div>
+      <div class="spacer"></div>
+    </div>
+  </div>
+  <div id="timeline" class="hero is-white is-medium">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title section-titles">CRONOLOGÍA</h2>
+
+        <div class="hito has-text-centered">
+          <h2 class="title is-2">ESTE ES UN HITO </h2>
+        </div>
+        <div id="myTimeline">
+          <div data-vtdate="30/06/2024">
+            <div class="pt-2 ">
+              <h1 class="title is-2">Lorem Ipsum</h1>
+              <div class="content">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium id placeat dolorum asperiores, molestiae aut natus nostrum iusto non est pariatur libero sunt accusamus commodi quas cum nihil vero rerum!</p>
+                <p>Id maxime minus deleniti voluptas molestias sapiente minima, rem cupiditate soluta voluptatem ullam numquam incidunt saepe quisquam magnam officiis adipisci consequatur! Maxime eaque commodi sit inventore voluptatem saepe. Tenetur, iusto.</p>
+              </div>
+            </div>
+          </div>
+          <div data-vtdate="30/06/2024">
+            <div class="pt-2 has-text-right">
+              <h1 class="title is-2">Lorem Ipsum</h1>
+              <div class="content">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium id placeat dolorum asperiores, molestiae aut natus nostrum iusto non est pariatur libero sunt accusamus commodi quas cum nihil vero rerum!</p>
+                <p>Id maxime minus deleniti voluptas molestias sapiente minima, rem cupiditate soluta voluptatem ullam numquam incidunt saepe quisquam magnam officiis adipisci consequatur! Maxime eaque commodi sit inventore voluptatem saepe. Tenetur, iusto.</p>
+               
+              </div>
+            </div>
+          </div>
+          <div data-vtdate="30/06/2024">
+            <div class="pt-2 ">
+              <h1 class="title is-2">Lorem Ipsum</h1>
+              <div class="content">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium id placeat dolorum asperiores, molestiae aut natus nostrum iusto non est pariatur libero sunt accusamus commodi quas cum nihil vero rerum!</p>
+                <p>Id maxime minus deleniti voluptas molestias sapiente minima, rem cupiditate soluta voluptatem ullam numquam incidunt saepe quisquam magnam officiis adipisci consequatur! Maxime eaque commodi sit inventore voluptatem saepe. Tenetur, iusto.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hito has-text-centered">
+          <h2 class="title is-2">ESTE ES UN HITO </h2>
+        </div>
+        <div id="myTimeline2">
+          <div data-vtdate="30/06/2024">
+            <div class="pt-2 ">
+              <h1 class="title is-2">Lorem Ipsum</h1>
+              <div class="content">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium id placeat dolorum asperiores, molestiae aut natus nostrum iusto non est pariatur libero sunt accusamus commodi quas cum nihil vero rerum!</p>
+                <p>Id maxime minus deleniti voluptas molestias sapiente minima, rem cupiditate soluta voluptatem ullam numquam incidunt saepe quisquam magnam officiis adipisci consequatur! Maxime eaque commodi sit inventore voluptatem saepe. Tenetur, iusto.</p>
+              </div>
+            </div>
+          </div>
+          <div data-vtdate="30/06/2024">
+            <div class="pt-2 has-text-right">
+              <h1 class="title is-2">Lorem Ipsum</h1>
+              <div class="content">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium id placeat dolorum asperiores, molestiae aut natus nostrum iusto non est pariatur libero sunt accusamus commodi quas cum nihil vero rerum!</p>
+                <p>Id maxime minus deleniti voluptas molestias sapiente minima, rem cupiditate soluta voluptatem ullam numquam incidunt saepe quisquam magnam officiis adipisci consequatur! Maxime eaque commodi sit inventore voluptatem saepe. Tenetur, iusto.</p>
+               
+              </div>
+            </div>
+          </div>
+          <div data-vtdate="30/06/2024">
+            <div class="pt-2 ">
+              <h1 class="title is-2">Lorem Ipsum</h1>
+              <div class="content">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium id placeat dolorum asperiores, molestiae aut natus nostrum iusto non est pariatur libero sunt accusamus commodi quas cum nihil vero rerum!</p>
+                <p>Id maxime minus deleniti voluptas molestias sapiente minima, rem cupiditate soluta voluptatem ullam numquam incidunt saepe quisquam magnam officiis adipisci consequatur! Maxime eaque commodi sit inventore voluptatem saepe. Tenetur, iusto.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="pericial">
+    <img src="/assets/contexto/pericial-frame.png" class="image is-fullwidth is-hidden-mobile" alt="">
+    <img src="/assets/contexto/pericial-frame-mobile.png" class="image is-fullwidth is-hidden-tablet" alt="">
+    <div class="section">
+      <div class="container">
+        <div class="columns is-centered is-mobile">
+          <div class="column is-12-mobile is-12-tablet is-9-desktop is-8-widescreen">
+            <div class="card-custom">
+              <div class="the-header">
+                <p class="the-title is-800">Este es un título</p>
+                <i class="icon-toggle fas fa-angle-down fa-xs"></i>
+              </div>
+              <div class="the-content content" style="display:none;">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos delectus ad eos, rerum voluptates quibusdam commodi praesentium dolores a quaerat obcaecati amet vel sunt similique consequuntur, in, pariatur tenetur minima.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos delectus ad eos, rerum voluptates quibusdam commodi praesentium dolores a quaerat obcaecati amet vel sunt similique consequuntur, in, pariatur tenetur minima.</p>
+              </div>
+            </div>
+            <div class="card-custom">
+              <div class="the-header">
+                <p class="the-title is-800">Este es un título</p>
+                <i class="icon-toggle fas fa-angle-down fa-xs"></i>
+              </div>
+              <div class="the-content content" style="display:none;">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos delectus ad eos, rerum voluptates quibusdam commodi praesentium dolores a quaerat obcaecati amet vel sunt similique consequuntur, in, pariatur tenetur minima.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos delectus ad eos, rerum voluptates quibusdam commodi praesentium dolores a quaerat obcaecati amet vel sunt similique consequuntur, in, pariatur tenetur minima.</p>
+              </div>
+            </div>
+            <div class="card-custom">
+              <div class="the-header">
+                <p class="the-title is-800">Este es un título</p>
+                <i class="icon-toggle fas fa-angle-down fa-xs"></i>
+              </div>
+              <div class="the-content content" style="display:none;">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos delectus ad eos, rerum voluptates quibusdam commodi praesentium dolores a quaerat obcaecati amet vel sunt similique consequuntur, in, pariatur tenetur minima.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos delectus ad eos, rerum voluptates quibusdam commodi praesentium dolores a quaerat obcaecati amet vel sunt similique consequuntur, in, pariatur tenetur minima.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="sentencia" class="hero is-medium">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-mobile">
+          <div class="column is-12-mobile is-12-tablet is-9-desktop is-8-widescreen">
+            <h2 class="title section-titles">SENTENCIA</h2>
+            <h3 class="title is-3">Suspendisse a sodales nulla, sed semper nisi. Cras lobortis volutpat nunc. Proin tincidunt enim in felis aliquet, a ultricies purus bibendum. Quisque in ultrices lectus. Nulla at urna diam. Proin sodales lobortis libero eu facilisis. In sem urna, aliquam vel consectetur sit amet, pulvinar sit amet lectus. Quisque molestie dapibus libero non pellentesque. Vivamus quam arcu, dictum quis hendrerit eget, lobortis eu felis.</h3>
+            <div class="buttons is-left">
+              <a href="https://www.clarin.com/tecnologia/reconocimiento-facial-sigue-suspendido-ciudad-buenos-aires-claves-entender-usos-riesgos-inteligencia-artificial_0_eT30Dwx2Gm.html" target="_blank" class="button is-white is-rounded is-medium is-800 is-uppercase"><i class="fas fa-download mr-3"></i>&nbsp;Descargar la sentencia</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="ratificacion" class="hero is-medium">
+    <div class="hero-body">
+      <div class="container">
+        <div class="special-box has-text-centered">
+          <h2 class="title section-titles mb-6">RATIFICACIÓN</h2>
+
+          <h3 class="title is-3">Suspendisse a sodales nulla, sed semper nisi. Cras lobortis volutpat nunc. Proin tincidunt enim in felis aliquet, a ultricies purus bibendum. Quisque in ultrices lectus. Nulla at urna diam. Proin sodales lobortis libero eu facilisis. In sem urna, aliquam vel consectetur sit amet, pulvinar sit amet lectus. Quisque molestie dapibus libero non pellentesque. Vivamus quam arcu, dictum quis hendrerit eget, lobortis eu felis.</h3>
+          <div class="buttons is-centered mt-6">
+            <a href="https://www.clarin.com/tecnologia/reconocimiento-facial-sigue-suspendido-ciudad-buenos-aires-claves-entender-usos-riesgos-inteligencia-artificial_0_eT30Dwx2Gm.html" target="_blank" class="button is-white is-rounded is-medium is-800 is-uppercase"><i class="fas fa-download mr-3"></i>&nbsp;Descargar la sentencia</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="glosario" class="hero is-black is-bold">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-centered is-mobile">
+          <div class="column is-12-mobile is-12-tablet is-9-desktop is-8-widescreen">
+            <h2 class="title section-titles">GLOSARIO</h2>
+            <div class="card-custom">
+              <div class="the-header">
+                <p class="the-title is-800">Este es un título</p>
+                <i class="icon-toggle fas fa-angle-down fa-xs"></i>
+              </div>
+              <div class="the-content content" style="display:none;">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos delectus ad eos, rerum voluptates quibusdam commodi praesentium dolores a quaerat obcaecati amet vel sunt similique consequuntur, in, pariatur tenetur minima.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos delectus ad eos, rerum voluptates quibusdam commodi praesentium dolores a quaerat obcaecati amet vel sunt similique consequuntur, in, pariatur tenetur minima.</p>
+              </div>
+            </div>
+            <div class="card-custom">
+              <div class="the-header">
+                <p class="the-title is-800">Este es un título</p>
+                <i class="icon-toggle fas fa-angle-down fa-xs"></i>
+              </div>
+              <div class="the-content content" style="display:none;">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos delectus ad eos, rerum voluptates quibusdam commodi praesentium dolores a quaerat obcaecati amet vel sunt similique consequuntur, in, pariatur tenetur minima.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos delectus ad eos, rerum voluptates quibusdam commodi praesentium dolores a quaerat obcaecati amet vel sunt similique consequuntur, in, pariatur tenetur minima.</p>
+              </div>
+            </div>
+            <div class="card-custom">
+              <div class="the-header">
+                <p class="the-title is-800">Este es un título</p>
+                <i class="icon-toggle fas fa-angle-down fa-xs"></i>
+              </div>
+              <div class="the-content content" style="display:none;">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos delectus ad eos, rerum voluptates quibusdam commodi praesentium dolores a quaerat obcaecati amet vel sunt similique consequuntur, in, pariatur tenetur minima.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos delectus ad eos, rerum voluptates quibusdam commodi praesentium dolores a quaerat obcaecati amet vel sunt similique consequuntur, in, pariatur tenetur minima.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr class="my-0">
   <div id="contacto" class="has-background-white">
+    <br>
+    <br>
+    <br>
     <div data-tf-live="01J6YTRNXKAJWRB2YX3B18NW7N"></div><script src="//embed.typeform.com/next/embed.js"></script>
   </div>
   <footer class="footer">
     <div class="container">
       <div class="columns">
         <div class="column is-hidden-desktop has-text-centered">
-          <img src="./assets/logos.png" class="image mb-3 mx-auto"
+          <img src="/assets/logos.png" class="image mb-3 mx-auto"
           alt="Observatorio de Derecho Informático Argentino y Democracia en Red ">
           <p>Reconoceme es un proyecto de <a href="https://odia.legal/" class="has-text-black is-500" target="_blank">Observatorio de Derecho Informático Argentino</a> y <a href="https://democraciaenred.org" class="has-text-black is-500" target="_blank">DEMOCRACIA EN RED</a></p>
         </div>
         <div class="column is-hidden-touch">
-          <img src="./assets/logos.png" class="image mb-3"
+          <img src="/assets/logos.png" class="image mb-3"
           alt="Observatorio de Derecho Informático Argentino y Democracia en Red ">
           <p>Reconoceme es un proyecto de</p>
           <p><a href="https://odia.legal/" class="has-text-black is-500" target="_blank">Observatorio de Derecho Informático Argentino</a> y <a href="https://democraciaenred.org" class="has-text-black is-500" target="_blank">DEMOCRACIA EN RED</a></p>
         </div>
         <div class="column is-flex is-align-items-center is-justify-content-center is-hidden-desktop">
-          <img src="./assets/circles.svg" class="image mr-3" width="90" alt="">
+          <img src="/assets/circles.svg" class="image mr-3" width="90" alt="">
           <p><a href="mailto:contacto@democraciaenred.org" class="mail-to">contacto@democraciaenred.org</a></p>
         </div>
         <div class="column is-flex is-align-items-center is-justify-content-flex-end is-hidden-touch">
-          <img src="./assets/circles.svg" class="image mr-3" width="90" alt="">
+          <img src="/assets/circles.svg" class="image mr-3" width="90" alt="">
           <p><a href="mailto:contacto@democraciaenred.org" class="mail-to">contacto@democraciaenred.org</a></p>
         </div>
       </div>
     </div>
   </footer>
-  <script src="/script.js"></script>
+  <script src="/script-contexto.js"></script>
 </body>
 
 </html>

@@ -25777,4 +25777,90 @@ has-background-danger.is-hoverable:active {
   }
 }
 
+#allanamiento {
+  background: url("./assets/people-6.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#timeline .hito {
+  padding: 0.75rem;
+  border-bottom: 5px dashed #ff0000;
+}
+#timeline .box {
+  color: #FFF;
+}
+#timeline .box .title {
+  color: #FFF;
+}
+
+#pericial {
+  background: url("./assets/people.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#pericial .section {
+  margin-top: -30px;
+}
+
+#sentencia {
+  background: url("./assets/people-6.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#ratificacion {
+  background: url("./assets/people-6.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#ratificacion .special-box {
+  border: 2px solid #FFF;
+  padding: 5rem 7rem;
+  border-radius: 35px;
+  background: radial-gradient(rgba(0, 0, 0, 0.75), rgba(226, 19, 19, 0.226));
+  backdrop-filter: blur(5px);
+}
+
+.section-titles {
+  color: #ff0000;
+  font-size: 3rem;
+}
+@media screen and (min-width: 769px) {
+  .section-titles {
+    font-size: 5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .section-titles {
+    font-size: 7rem;
+  }
+}
+
+.card-custom {
+  color: #FFF;
+}
+.card-custom .the-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #FFF;
+  font-size: 2rem;
+  line-height: normal;
+  font-family: "Bebas Neue", "Inter", "SF Pro", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+.card-custom .the-header:hover {
+  cursor: pointer;
+}
+.card-custom .the-content {
+  margin: 20px 0;
+}
+
 /*# sourceMappingURL=style.css.map */
