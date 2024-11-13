@@ -32,12 +32,12 @@ $(document).ready(function() {
     animate: "slide",
     arrows: false
   });
-  $('#myTimeline2').verticalTimeline({
-    startLeft: false,
-    alternate: true,
-    animate: "slide",
-    arrows: false
-  });
+  // $('#myTimeline2').verticalTimeline({
+  //   startLeft: false,
+  //   alternate: true,
+  //   animate: "slide",
+  //   arrows: false
+  // });
 
   $('.card-custom .the-header').on('click', function () {
     console.log('click')
