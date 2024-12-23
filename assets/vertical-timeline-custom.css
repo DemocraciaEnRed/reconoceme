@@ -1,0 +1,159 @@
+/*!
+    Title: Vertical-Timeline
+    Version: 2.0.0
+    Last Change: 04/30/17
+    Author: Ryan Fitzgerald
+    Repo: https://github.com/RyanFitzgerald/vertical-timeline
+    Issues: https://github.com/RyanFitzgerald/vertical-timeline/issues
+	LICENSE: MIT
+*/
+.vtimeline {
+  position: relative;
+  padding: 30px;
+  padding-bottom: 0;
+  margin-top: 5px;
+  overflow: hidden;
+}
+.vtimeline:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 7px;
+  background: linear-gradient(180deg, rgba(255,0,0,1) 50%, rgba(0,0,0,1) 100%);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.vtimeline-point {
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.vtimeline-icon {
+  position: absolute;
+  top: 10px;
+  height: 30px;
+  width: 30px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 5px solid #000;
+  box-shadow:inset 0px 0px 0px 4px #f00;
+}
+
+.vtimeline-block {
+  width: 45%;
+  margin: 0;
+  transition: 0.5s ease all;
+}
+.vtimeline-block:after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 45%;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #eee;
+  border-right: none;
+}
+
+.vtimeline-right {
+  margin-left: 55%;
+}
+.vtimeline-right.vt-animate-slide .vtimeline-content {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+.vtimeline-right .vtimeline-date {
+  left: auto;
+  right: 55%;
+}
+.vtimeline-right:after {
+  left: auto;
+  right: 45%;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: none;
+  border-right: 10px solid #eee;
+}
+
+.vtimeline-date {
+  position: absolute;
+  font-family: "Bebas Neue", "Inter", "SF Pro", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  left: 55%;
+  /* top: -10px; */
+}
+
+.vtimeline-content {
+  /* background: #eee; */
+  transition: 0.5s ease all;
+}
+
+.vt-animate-fade {
+  opacity: 0;
+}
+
+.vt-animate-slide {
+  opacity: 0;
+}
+.vt-animate-slide .vtimeline-content {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+.vt-noarrows:after {
+  content: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .vtimeline:before {
+    left: 30px;
+    right: auto;
+    margin: 0;
+  }
+  .vtimeline-icon {
+    left: -10px;
+    right: auto;
+    margin: 0;
+  }
+  .vtimeline-block {
+    width: 85%;
+    margin-left: 15%;
+  }
+  .vtimeline-block:after {
+    left: auto;
+    right: 85%;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: none;
+    border-right: 10px solid #eee;
+  }
+  .vtimeline-date {
+    position: relative;
+    display: block;
+    top: 0;
+    left: 0;
+    right: auto;
+    /* background: #eee; */
+  }
+  .vtimeline-right .vtimeline-date {
+    right: auto;
+  }
+  .vtimeline.basic .vtimeline-date {
+    padding: 10px 10px 0 10px;
+  }
+  .vt-animate-slide .vtimeline-content {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+}
