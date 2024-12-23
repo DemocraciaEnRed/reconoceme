@@ -25758,6 +25758,17 @@ has-background-danger.is-hoverable:active {
   font-family: "Bebas Neue Book", "Inter", "SF Pro", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 1.7rem;
 }
+.navbar .caso-link {
+  background-color: #FFF;
+  color: #000;
+  margin-top: 0.7rem;
+  margin-left: 1.5rem;
+  height: fit-content;
+  padding: 0.95rem 1rem 0.55rem 1rem;
+  border-radius: 999px;
+  line-height: normal;
+  font-weight: 600;
+}
 @media screen and (max-width: 1023px) {
   .navbar.is-open .container {
     display: flex;
@@ -25775,6 +25786,205 @@ has-background-danger.is-hoverable:active {
     text-align: center;
     font-size: 3rem;
   }
+  .navbar .caso-link {
+    margin-right: 1.5rem;
+  }
+}
+
+.button {
+  white-space: normal;
+}
+
+#allanamiento {
+  background: url("./assets/people-6.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#allanamiento .text {
+  line-height: 1.3;
+  font-size: 18px;
+  text-align: left;
+}
+
+#cronologia .hito {
+  padding: 0.75rem;
+  border-bottom: 5px dashed #ff0000;
+}
+#cronologia .box {
+  color: #FFF;
+}
+#cronologia .box .title {
+  color: #FFF;
+}
+#cronologia p {
+  line-height: 1.3;
+  font-size: 18px;
+  font-weight: 400;
+}
+#cronologia p b {
+  font-weight: 600;
+}
+
+#pericial {
+  background: url("./assets/people.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#pericial .section {
+  margin-top: -30px;
+}
+
+#sentencia {
+  background: url("./assets/people-6.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#ratificacion {
+  background: url("./assets/people-6.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#ratificacion .special-box {
+  border: 2px solid #FFF;
+  border-radius: 35px;
+  padding: 1rem;
+  background: radial-gradient(rgba(0, 0, 0, 0.75), rgba(226, 19, 19, 0.226));
+  backdrop-filter: blur(5px);
+}
+@media screen and (min-width: 1024px) {
+  #ratificacion .special-box {
+    padding: 5rem 7rem;
+  }
+}
+
+.section-titles {
+  color: #ff0000;
+  font-size: 3rem;
+}
+@media screen and (min-width: 769px) {
+  .section-titles {
+    font-size: 5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .section-titles {
+    font-size: 7rem;
+  }
+}
+
+.card-custom {
+  color: #FFF;
+}
+.card-custom .the-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #FFF;
+  font-size: 2rem;
+  line-height: normal;
+  font-family: "Bebas Neue", "Inter", "SF Pro", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+.card-custom .the-header:hover {
+  cursor: pointer;
+}
+.card-custom .the-content {
+  margin: 20px 0;
+}
+
+#glosario .glosaryItem > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #FFF;
+  font-size: 2rem;
+  line-height: normal;
+  font-family: "Bebas Neue", "Inter", "SF Pro", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+#glosario .glosaryItem > div .the-title {
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  #glosario .glosaryItem > div {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  #glosario .glosaryItem > div .the-title {
+    text-align: start;
+  }
+}
+
+#contexto {
+  position: relative;
+  border-bottom: 1px solid #ff0000;
+}
+#contexto .text-content {
+  position: relative;
+  z-index: 1;
+}
+#contexto .face {
+  position: absolute;
+  width: 7%;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  #contexto .face {
+    display: block;
+  }
+}
+#contexto .face:hover {
+  transform: scale(1.8);
+}
+#contexto .face01 {
+  top: 81%;
+  left: 3%;
+}
+#contexto .face02 {
+  top: -16%;
+  left: 26%;
+}
+#contexto .face03 {
+  top: 36%;
+  left: 35%;
+}
+#contexto .face04 {
+  bottom: -17%;
+  right: 38%;
+}
+#contexto .face05 {
+  top: 36%;
+  left: 65%;
+}
+#contexto .face06 {
+  top: -17%;
+  right: 9%;
+  width: 8%;
+}
+#contexto .face07 {
+  top: 48%;
+  right: 7%;
+}
+
+#entrevistas .hero-body .container .columns .card .card-image {
+  display: flex;
+  justify-content: center;
+}
+#entrevistas .hero-body .container .columns .card .card-image video {
+  height: 600px;
+  width: auto;
+  border-radius: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

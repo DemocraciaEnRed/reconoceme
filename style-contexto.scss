@@ -1,0 +1,214 @@
+// @use "bulma/sass/utilities/mixins";
+
+#allanamiento {
+  background: url('./assets/people-6.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  .text {
+    line-height: 1.3;
+    font-size: 18px;
+    text-align: left;
+  }
+}
+
+#cronologia {
+  .hito {
+    padding: 0.75rem;
+    border-bottom: 5px dashed #ff0000;
+  }
+  .box {
+    color: #FFF;
+    .title{
+      color: #FFF;
+    }
+  }
+  p{
+    line-height: 1.3;
+    font-size: 18px;
+    font-weight: 400;
+    b{
+      font-weight: 600;
+    }
+  }
+}
+
+#pericial {
+  background: url('./assets/people.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  .section{
+    margin-top: -30px;
+  }
+}
+
+#sentencia {
+  background: url('./assets/people-6.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+#ratificacion {
+  background: url('./assets/people-6.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  .special-box{
+    border: 2px solid #FFF;
+    border-radius: 35px;
+    padding: 1rem;
+    // background is a glossy effect
+    background: radial-gradient(rgba(0, 0, 0, 0.75), rgba(226, 19, 19, 0.226));
+    backdrop-filter: blur(5px);
+    @include mixins.from($desktop) {
+      padding: 5rem 7rem;
+    }
+    
+  }
+}
+
+.section-titles {
+  color: #ff0000;
+  font-size: 3rem;
+
+  @include mixins.from($tablet) {
+    font-size: 5rem;
+  }  
+  @include mixins.from($desktop) {
+    font-size: 7rem;
+  }
+
+}
+
+
+.card-custom{
+  color: #FFF;
+  .the-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #FFF;
+    font-size: 2rem;
+    line-height: normal;
+    font-family: "Bebas Neue", "Inter", "SF Pro", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  .the-content{
+    margin: 20px 0;
+  }
+}
+
+#glosario{
+  .glosaryItem{
+    > div{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #FFF;
+    font-size: 2rem;
+    line-height: normal;
+    font-family: "Bebas Neue", "Inter", "SF Pro", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    .the-title{
+      text-align: center;
+    }
+    @include mixins.from($desktop) {
+      flex-direction: row;
+      align-items: flex-start;
+      .the-title{
+        text-align: start;
+      }
+    }
+    }
+  }
+}
+
+#contexto {
+  position: relative;
+  border-bottom: 1px solid #ff0000;
+  .text-content{
+    position: relative;
+    z-index: 1;
+  }
+  
+  .face {
+    position: absolute;
+    width: 7%;
+    cursor: pointer;
+    // animation
+    transition: transform 0.3s ease-in-out;
+    display: none;
+    @include mixins.from($desktop) {
+      display: block;
+    }
+    &:hover {
+        transform: scale(1.8);
+    }      
+  }
+
+  .face01 {
+    top: 81%;
+    left: 3%;
+  }
+
+  .face02 {
+    top: -16%;
+    left: 26%;
+  }
+
+  .face03 {
+    top: 36%;
+    left: 35%;
+  }
+
+  .face04 {
+    bottom: -17%;
+    right: 38%;
+  }
+
+  .face05 {
+    top: 36%;
+    left: 65%;
+  }
+
+  .face06 {
+    top: -17%;
+    right: 9%;
+    width: 8%;
+  }
+
+  .face07 {
+    top: 48%;
+    right: 7%;
+  }
+}
+
+#entrevistas{
+  .hero-body{
+    .container{
+      .columns{
+        .card{
+          .card-image{
+              display: flex;
+              justify-content: center;
+              video{
+                height: 600px;
+                width: auto;
+                border-radius: 15px;
+              }
+          }
+        }
+      }
+    }
+  }
+}
