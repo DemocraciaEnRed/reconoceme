@@ -494,6 +494,18 @@
     font-size: 1.7rem;
   }
 
+  .caso-link{
+    background-color: #FFF;
+    color: #000;
+    margin-top: .70rem;
+    margin-left: 1.5rem;
+    height: fit-content;
+    padding: 0.95rem 1rem 0.55rem 1rem;
+    border-radius: 999px;
+    line-height: normal;
+    font-weight: 600;
+  }
+
   @include mixins.until($desktop) {
 
     &.is-open .container {
@@ -514,7 +526,13 @@
         font-size: 3rem;
       }
     }
+    .caso-link{
+      margin-right: 1.5rem;
+    }
   }
 }
 
+.button{
+  white-space: normal;
+}
 @import "style-contexto"
