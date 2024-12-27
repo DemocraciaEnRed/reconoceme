@@ -25764,7 +25764,6 @@ has-background-danger.is-hoverable:active {
   margin-top: 0.7rem;
   margin-left: 1.5rem;
   height: fit-content;
-  padding: 0.95rem 1rem 0.55rem 1rem;
   border-radius: 999px;
   line-height: normal;
   font-weight: 600;
@@ -25928,13 +25927,9 @@ has-background-danger.is-hoverable:active {
   position: relative;
   border-bottom: 1px solid #ff0000;
 }
-#contexto .text-content {
-  position: relative;
-  z-index: 1;
-}
 #contexto .face {
   position: absolute;
-  width: 7%;
+  width: 90px;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
   display: none;
@@ -25945,36 +25940,38 @@ has-background-danger.is-hoverable:active {
   }
 }
 #contexto .face:hover {
-  transform: scale(1.8);
+  transform: scale(1.5);
 }
 #contexto .face01 {
   top: 81%;
   left: 3%;
 }
 #contexto .face02 {
-  top: -16%;
+  top: 6%;
   left: 26%;
 }
 #contexto .face03 {
-  top: 36%;
-  left: 35%;
+  top: -50%;
+  left: -20%;
 }
 #contexto .face04 {
-  bottom: -17%;
+  bottom: 0%;
   right: 38%;
 }
 #contexto .face05 {
   top: 36%;
   left: 65%;
+  position: inherit;
 }
 #contexto .face06 {
   top: -17%;
-  right: 9%;
-  width: 8%;
+  left: 38%;
+  position: inherit;
 }
 #contexto .face07 {
   top: 48%;
-  right: 7%;
+  right: -50%;
+  position: inherit;
 }
 
 #entrevistas .hero-body .container .columns .card .card-image {

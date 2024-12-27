@@ -136,14 +136,10 @@
 #contexto {
   position: relative;
   border-bottom: 1px solid #ff0000;
-  .text-content{
-    position: relative;
-    z-index: 1;
-  }
   
   .face {
     position: absolute;
-    width: 7%;
+    width: 90px;
     cursor: pointer;
     // animation
     transition: transform 0.3s ease-in-out;
@@ -152,7 +148,7 @@
       display: block;
     }
     &:hover {
-        transform: scale(1.8);
+        transform: scale(1.5);
     }      
   }
 
@@ -162,34 +158,36 @@
   }
 
   .face02 {
-    top: -16%;
+    top: 6%;
     left: 26%;
   }
 
   .face03 {
-    top: 36%;
-    left: 35%;
+    top: -50%;
+    left: -20%;
   }
 
   .face04 {
-    bottom: -17%;
+    bottom: 0%;
     right: 38%;
   }
 
   .face05 {
     top: 36%;
     left: 65%;
+    position: inherit;
   }
 
   .face06 {
     top: -17%;
-    right: 9%;
-    width: 8%;
+    left: 38%;
+    position: inherit;
   }
 
   .face07 {
     top: 48%;
-    right: 7%;
+    right: -50%;
+    position: inherit;
   }
 }
 
