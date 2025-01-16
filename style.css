@@ -25739,6 +25739,10 @@ has-background-danger.is-hoverable:active {
   color: #FFF;
 }
 
+#contacto > div > div {
+  height: 700px !important;
+}
+
 .footer {
   background-color: #FF0000;
   color: #000;
@@ -25912,14 +25916,22 @@ has-background-danger.is-hoverable:active {
 }
 #glosario .glosaryItem > div .the-title {
   text-align: center;
+  margin-bottom: 0.75rem;
+}
+#glosario .glosaryItem > div .buttons {
+  margin-bottom: 0.75rem;
 }
 @media screen and (min-width: 1024px) {
   #glosario .glosaryItem > div {
     flex-direction: row;
-    align-items: flex-start;
+    padding-bottom: 0.75rem;
   }
   #glosario .glosaryItem > div .the-title {
     text-align: start;
+    margin-bottom: 0;
+  }
+  #glosario .glosaryItem > div .buttons {
+    margin-bottom: 0;
   }
 }
 
@@ -25977,9 +25989,10 @@ has-background-danger.is-hoverable:active {
 #entrevistas .hero-body .container .columns .card .card-image {
   display: flex;
   justify-content: center;
+  height: 600px;
 }
 #entrevistas .hero-body .container .columns .card .card-image video {
-  height: 600px;
+  height: 100%;
   width: auto;
   border-radius: 15px;
 }
