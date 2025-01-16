@@ -113,20 +113,28 @@
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #FFF;
-    font-size: 2rem;
-    line-height: normal;
-    font-family: "Bebas Neue", "Inter", "SF Pro", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #FFF;
+      font-size: 2rem;
+      line-height: normal;
+      font-family: "Bebas Neue", "Inter", "SF Pro", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     .the-title{
       text-align: center;
+      margin-bottom: 0.75rem;
+    }
+    .buttons{
+      margin-bottom: 0.75rem;
     }
     @include mixins.from($desktop) {
       flex-direction: row;
-      align-items: flex-start;
+        padding-bottom: 0.75rem;
       .the-title{
         text-align: start;
+        margin-bottom: 0;
+      }
+      .buttons{
+        margin-bottom: 0;
       }
     }
     }
@@ -199,8 +207,9 @@
           .card-image{
               display: flex;
               justify-content: center;
+              height: 600px;
               video{
-                height: 600px;
+                height: 100%;
                 width: auto;
                 border-radius: 15px;
               }
