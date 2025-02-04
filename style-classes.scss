@@ -489,7 +489,25 @@
     text-decoration: underline;
     font-weight: 500;
   }
-}
+  .footer-logo-title{
+    width: 60%;
+  }
+ 
+  .footer-logo{
+    align-items: end;
+    @include mixins.until($desktop) {
+      align-items: center;
+      
+    }
+    img{
+      width: 60%;
+      height: auto;
+      margin: 16px 0;
+    @include mixins.until($desktop) {
+    width: 40%;
+    }
+    }}
+  }
 
 
 .navbar {

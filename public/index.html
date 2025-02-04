@@ -43,6 +43,13 @@
     gtag('js', new Date());
     gtag('config', 'G-Q5M7KSFH6R');
   </script>
+
+  <!-- cookies -->
+  
+  <!-- Cookie Banner -->
+  <link rel="stylesheet" href="cookiebanner.style.css">
+
+
 </head>
 <body>
   <nav class="navbar is-black" role="navigation" aria-label="main navigation">
@@ -130,7 +137,7 @@
       <!-- <img class="frame-qr" src="/assets/frame-rari.png" alt=""> -->
       <div class="container">
         <div class="columns is-mobile">
-          <div class="column is-12-mobile is-12-tablet is-7-desktop"">
+          <div class="column is-12-mobile is-12-tablet is-7-desktop">
             <h1 class=" title main-title">¿DE QUÉ HABLAMOS CUANDO HABLAMOS DE RECONOCIMIENTO FACIAL?</h1>
             <div class="text-content">
 
@@ -614,32 +621,66 @@
   <div id="contacto" class="has-background-white">
     <div data-tf-live="01J6YTRNXKAJWRB2YX3B18NW7N"></div><script src="//embed.typeform.com/next/embed.js"></script>
   </div>
-  <footer class="footer">
-    <div class="container">
+  <footer class="footer p-0">
+    <div class="container p-5">
       <div class="columns">
-        <div class="column is-hidden-desktop has-text-centered">
-          <img src="/assets/logos.png" class="image mb-3 mx-auto"
-          alt="Observatorio de Derecho Informático Argentino y Democracia en Red ">
-          <p>Reconoceme es un proyecto de <a href="https://odia.legal/" class="has-text-black is-500" target="_blank">Observatorio de Derecho Informático Argentino</a> y <a href="https://democraciaenred.org" class="has-text-black is-500" target="_blank">DEMOCRACIA EN RED</a></p>
+        <div class="column">
+          Reconoceme es un proyecto de <a class="has-text-weight-semibold has-text-black" href="https://democraciaenred.org/" target="_blank">Democracia en Red</a>, <br> una ONG latinoamericana con base en Buenos Aires, Argentina.
         </div>
-        <div class="column is-hidden-touch">
-          <img src="/assets/logos.png" class="image mb-3"
-          alt="Observatorio de Derecho Informático Argentino y Democracia en Red ">
-          <p>Reconoceme es un proyecto de</p>
-          <p><a href="https://odia.legal/" class="has-text-black is-500" target="_blank">Observatorio de Derecho Informático Argentino</a> y <a href="https://democraciaenred.org" class="has-text-black is-500" target="_blank">DEMOCRACIA EN RED</a></p>
-        </div>
-        <div class="column is-flex is-align-items-center is-justify-content-center is-hidden-desktop">
-          <img src="/assets/circles.svg" class="image mr-3" width="90" alt="">
-          <p><a href="mailto:contacto@democraciaenred.org" class="mail-to">contacto@democraciaenred.org</a></p>
-        </div>
-        <div class="column is-flex is-align-items-center is-justify-content-flex-end is-hidden-touch">
+                <div class="column is-flex is-align-items-center is-justify-content-flex-end is-hidden-touch">
           <img src="/assets/circles.svg" class="image mr-3" width="90" alt="">
           <p><a href="mailto:contacto@democraciaenred.org" class="mail-to">contacto@democraciaenred.org</a></p>
         </div>
       </div>
     </div>
+
+      <div class=" has-background-black">
+        <div class="container ">
+
+          <div class="columns is-vcentered has-text-centered-mobile">
+            <!-- Secciones web -->
+            <div class="column is-12-mobile is-4-desktop my-6">
+              <p class="has-text-weight-bold has-text-white">Secciones web</p>
+              <ul>
+                <li><a href="#home" class="has-text-white">Inicio</a></li>
+                <li><a href="#contexto" class="has-text-white">Contexto</a></li>
+                <li><a href="#riesgos" class="has-text-white">Riesgos</a></li>
+                <li><a href="#objetivos" class="has-text-white">Objetivos</a></li>
+                <li><a href="#prensa" class="has-text-white">Prensa</a></li>
+                <li><a href="/contexto" class="has-text-white">EL caso</a></li>
+              </ul>
+            </div>
+      
+            <!-- Logo central y contacto -->
+            <div class="column is-12-mobile is-4-desktop my-6 has-text-centered">
+              <img src="/assets/logo-reconoceme.svg" alt="RECONOCEME. El reconocimiento facial no reconoce tus derechos." class="mb-6">
+              <p><a href="mailto:contacto@democraciaenred.org" class="has-text-white">contacto@democraciaenred.org</a></p>
+            </div>
+      
+            <!-- Proyecto -->
+            <div class="column is-12-mobile is-4-desktop my-6 is-flex is-flex-direction-column footer-logo">
+              <div class="has-text-centered footer-logo-title">
+
+                <p class="has-text-weight-bold has-text-white">Proyecto de</p>
+              </div>
+                  <img src="/assets/odia-logo-completo.png"  alt="Observatorio de Derecho Informático Argentino" >
+                  <img src="/assets/logo-der.png"  alt="Democracia en Red" >
+
+            </div>
+          </div>
+        </div>
+      </div>
+
   </footer>
   <script src="/script.js"></script>
+  <script src="cookiebanner.script.js"></script>
+
+  <script>
+      $(document).ready(function() {
+          cookieBanner.init();
+      });
+  </script>
+
 </body>
 
 </html>
