@@ -25752,6 +25752,27 @@ has-background-danger.is-hoverable:active {
   text-decoration: underline;
   font-weight: 500;
 }
+.footer .footer-logo-title {
+  width: 60%;
+}
+.footer .footer-logo {
+  align-items: end;
+}
+@media screen and (max-width: 1023px) {
+  .footer .footer-logo {
+    align-items: center;
+  }
+}
+.footer .footer-logo img {
+  width: 60%;
+  height: auto;
+  margin: 16px 0;
+}
+@media screen and (max-width: 1023px) {
+  .footer .footer-logo img {
+    width: 40%;
+  }
+}
 
 .navbar {
   position: sticky;
