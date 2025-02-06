@@ -25755,6 +25755,9 @@ has-background-danger.is-hoverable:active {
 .footer .footer-logo-title {
   width: 60%;
 }
+.footer .link-list {
+  padding-left: 5%;
+}
 .footer .footer-logo {
   align-items: end;
 }
